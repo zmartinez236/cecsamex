@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,UAAU,AAAA,CACN,gBAAgB,CAAE,OAAO,CACzB,MAAM,CAAE,KAAK,CACb,aAAa,CAAE,IAAI,CACtB,AAED,AAAA,KAAK,AAAA,CACD,aAAa,CAAE,IAAI,CAMtB,AAPD,AAGI,KAHC,CAGD,GAAG,AAAA,CACC,MAAM,CAAE,KAAK,CACb,gBAAgB,CAAE,OAAO,CAC5B",
+    "sources": [
+        "../scss/webStyles.scss"
+    ],
+    "names": [],
+    "file": "webStyles.min.css"
+}
