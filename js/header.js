@@ -52,7 +52,7 @@ document.getElementById("headerWeb").innerHTML =
                     '<a href="#">Contáctanos</a>'+
                 '</li>'+
                 '<li id="menu-preguntas">'+
-                    '<a href="#">Preguntas Frecuentes</a>'+
+                    '<a href="preguntas.html">Preguntas Frecuentes</a>'+
                 '</li>'+
             '</ul>'+
         '</div>'+
@@ -146,7 +146,7 @@ document.getElementById("headerWeb").innerHTML =
                     '<a href="">Newsletter</a>'+
                 '</li>'+
                 '<li>'+
-                    '<a href="">Aviso de Privacidad</a>'+
+                    '<a href="aviso.html">Aviso de Privacidad</a>'+
                 '</li>'+
                 '<li>'+
                     '<a href="">Catálogo de Productos</a>'+

@@ -39,7 +39,7 @@ document.getElementById("footerWeb").innerHTML =
             '<div class="col-8 tRigth">'+
                 '<ul class="listInline">'+
                     '<li>'+
-                        '<a href="#">Aviso de Privacidad</a>'+
+                        '<a href="aviso.html">Aviso de Privacidad</a>'+
                     '</li>'+
                     '<li>'+
                         '<a href="#">Newslatter</a>'+
