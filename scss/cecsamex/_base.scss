@@ -1,0 +1,86 @@
+//Colores
+$red:#E73232;
+$blue:#0F1C95;
+//$blue2:#0B1523;
+$blue2:#1B2230;
+
+$white:#FFFFFF;
+$black:#000000;
+$gray:#41464B;
+$gray2:#333333;
+$gray3:#666666;
+$gray4:#999999;
+$gray5:#F4F4F4;
+
+@mixin montseBase{
+    font-family: 'Montserrat', sans-serif;
+}
+@mixin NuniBase{
+    font-family: 'Nunito Sans', sans-serif;;
+}
+
+@mixin transAnim{
+    transition: all 0.4s ease;
+}
+
+//--------------Elementos HTML---------------------
+html{
+    //font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    @include montseBase;
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+}
+
+p{
+    margin: 0 0 1rem;
+}
+
+a{
+    margin: 0;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+
+    &.listInline{
+        //display: flex;
+
+        li{
+            margin-right: 0.5rem;
+            display: inline-block;
+        }
+        
+    }
+}
+//------------------Clase varias--------------------
+.tCenter{
+    text-align: center!important;
+}
+.tLeft{
+    text-align: left!important;
+}
+.tRigth{
+    text-align: right!important;
+}
+
+//Degradado base
+@mixin backDegrad{
+    background: linear-gradient(to right, $red, $blue);
+}
+@mixin backDegrad2{
+    background: linear-gradient($blue2, $black);
+}

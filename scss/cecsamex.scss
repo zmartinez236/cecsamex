@@ -1,0 +1,16 @@
+/*CECSAMEX - hoja de estilos 2023*/
+
+//Reset a los elementos
+//@import 'cecsamex/_reset.scss';
+
+//Estilos base (colores, fuente, etc)
+@import 'cecsamex/_base.scss';
+
+//Grid (base del grid)
+@import 'cecsamex/_grid.scss';
+
+//Header, footer
+@import 'cecsamex/_navbarfooter.scss';
+
+//componentes
+@import 'cecsamex/_general.scss';

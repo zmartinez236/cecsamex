@@ -1,0 +1,665 @@
+//Navbar
+header{
+    //@include backDegrad;
+    height: 45px;
+    color:$white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    //Estilos barra de navegacion
+    .contNav{
+        @include backDegrad;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        @include transAnim;
+
+        //boton del menu responsivo
+        .cnButtonRespon{
+            display: none;
+        }
+
+        //logo
+        .cnLogo{
+            //border:1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 3.9rem;
+            cursor: pointer;
+
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 4.5rem;
+
+                img{
+                    width: 3.2rem;
+                    height: 2.4rem;
+                }
+            }
+        }
+        
+        //Menu
+        .cnMenu{
+            //border:1px solid white;
+
+            ul{
+                margin: 0;
+
+                li{
+                    margin: 0 3.9rem;
+
+                    a,
+                    span{
+                        display: inline-flex;
+                        height: 4.5rem;
+                        box-sizing: border-box;
+                        color:$white;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.6rem;
+                        @include NuniBase;
+                        @include transAnim;
+                        cursor: pointer;
+
+                        &:hover{
+                            opacity: 0.6;
+                        }
+                    }
+
+                    &.active{
+                        a,span{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+
+            .dropdownHeader{
+
+                .ddButton{
+                    i{
+                        margin-left: 0.5rem;
+                        font-size: 1.6rem;
+                        @include transAnim;
+                    }
+                }
+
+                .ddMenu{
+                    position: fixed;
+                    //top: 4.5rem;
+                    top:-42rem;
+                    left: 0;
+                    right: 0;
+                    height: 42rem;
+                    background-color: $blue2;
+                    @include transAnim;
+                    z-index: -1;
+
+                    .ddmContent{
+                        width: 144rem;
+                        height: 42rem;
+                        margin: 0 auto;
+                        display: flex;
+                        align-items: center;
+
+                        & > div{
+
+                            &:first-child{
+                                img{
+                                    width: 25rem;
+                                }
+                            }
+
+                            &:last-child{
+                                margin-left: 19rem;
+
+                                ul{
+                                    li{
+                                        margin: 0;
+                                        display: block;
+
+                                        a{
+                                            height: auto;
+                                            margin-bottom: 1.2rem;
+                                            font-size: 1.8rem;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                &.open{
+
+                    .ddButton{
+                        i{
+                            transform: rotate(-180deg);
+                        }
+                    }
+
+                    .ddMenu{
+                        top: 4.5rem;
+                    }   
+                }
+            }
+
+            &.hide{
+                opacity: 0;
+            }
+        }
+
+        //Buscador
+        .cnSearch{
+            margin-left: 3.9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+
+            .cnsButton{
+                font-size: 1.8rem;
+            }
+
+            .cnsInput{
+                //background-color: red;
+                height: 4.5rem;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                right: 3rem;
+                width: 97rem;
+                padding: 0.6rem 2rem;
+                box-sizing: border-box;
+                visibility: hidden;
+                opacity: 0;
+                @include transAnim;
+                
+
+                input{
+                    width: 100%;
+                    border-radius: 6rem;
+                    border:0;
+                    background-color: #FFFFFF90;
+                    padding: 0.4rem 3rem;
+                    color:$white;
+                }
+            }
+
+
+            //Caja con resultados
+            .cnsResultados{
+                background-color: $white;
+                padding: 1rem;
+                display: none;
+                position: absolute;
+                top: 4.5rem;
+                right: 3rem;
+                width: 91rem;
+                margin-right: 2rem;
+
+                ul{
+                    margin:0;
+
+                    li{
+                        a{
+                            display: flex;
+                            flex-direction: column;
+                            border-bottom: 0.1rem solid $black;
+                            cursor:pointer;
+                            box-sizing: border-box;
+                            padding: 0.8rem 0.8rem 0.8rem 5rem;
+                            @include transAnim;
+                            position: relative;
+                            @include NuniBase;
+
+                            img{
+                                position: absolute;
+                                left: 0;
+                                top: 0.6rem;
+                                //border:1px solid red;
+                            }
+
+                            p{
+                                margin: 0;
+
+                                &.cnsrNumerp{
+                                    font-weight: bold;
+                                }
+                            }
+
+                            &:hover{
+                                background-color: $gray5;
+                            }
+                        }
+
+                        &:last-child{
+                            a{
+                                //border-bottom: none;
+                            }
+                        }
+                    }
+                }
+
+                & > p{
+                    @include NuniBase;
+                    color:$black;
+                    margin-top: 2rem;
+                    text-align: right;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+
+                    i{
+                        //transform: rotate(45deg);
+                        color:$red;
+                        font-size: 2rem;
+                        vertical-align: bottom;
+                        transform: rotate(-90deg);
+                        display: inline-block;
+                    }
+                }
+
+                &.showResult{
+                    display: block;
+                }
+            }
+
+
+            //Aplicando Open
+            &.open{
+                .cnsInput{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+
+
+
+        //Bton menu derecho
+        .cnHambur,
+        .cnButtonRespon{
+            position: absolute;
+            top:0.7rem;
+            right: 1.5rem;
+            width: 3rem;
+            height: 3rem;
+            //border:1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            & > i{
+                font-size: 2.6rem;
+            }
+        }
+
+        .cnButtonRespon{
+            display: none;
+            right: auto;
+            left: 1.5rem;
+        }
+
+        //OffCanvas
+        .cnOffCanvasL,
+        .cnOffCanvasR{
+            background-color: $blue2;
+            position: fixed;
+            z-index: 1;
+            top:45px;
+            left: 0;
+            bottom:0;
+            width: 40rem;
+            padding-top: 5rem;
+            box-sizing: border-box;
+            @include transAnim;
+            @include NuniBase;
+
+            ul{
+                li{
+                    a{
+                        color:$white;
+                        font-size: 1.6rem;
+                        @include transAnim;
+                        padding: 0.8rem 0;
+                        display: inline-block;
+
+                        &:hover{
+                            opacity: 0.6;
+                        }
+                    }
+                }
+
+                &.listRedes{
+                    margin-top: 5rem;
+                }
+            }
+        }
+
+        .cnOffCanvasL{
+            left: -40rem;
+            padding-right: 5rem;
+
+                ul{
+                    & > li{
+                        text-align: right;
+
+                        &#menu-nuestra{
+                            .dropdownHeader{
+
+                                .ddButton{
+                                    padding:.8rem 0;
+                                    font-size: 1.6rem;
+
+                                    i{
+                                        display: none;
+                                    }
+                                }
+
+                                .ddMenu{
+                                    .ddmContent{
+                                        //display: flex;
+
+                                        & > div{
+
+                                            &:first-child{
+                                                display: none;
+                                            }
+
+                                            &:last-child{
+                                                ul{
+                                                    margin-right: 2rem;
+                                                    margin-top: 1rem;
+
+                                                    li{
+                                                        list-style: circle;
+
+                                                        a{
+                                                            //color:red;
+                                                            font-size: 1.4rem;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+            &.show{
+                left: 0;
+            }
+        }
+
+        .cnOffCanvasR{
+            left: auto;
+            right: -40rem;
+            padding-left: 5rem;
+
+            &.show{
+                right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+
+    header{
+        .contNav{
+            justify-content: start;
+
+            .cnButtonRespon{
+                display: block;
+            }
+
+            .cnLogo{
+                margin-left: 8rem;
+            }
+
+            .cnMenu{
+                display: none;
+            }
+
+            .cnSearch{
+                margin-left: auto;
+                margin-right: 8rem;
+                position: static;
+
+                .cnsInput{
+                    width: auto;
+                    left: 12rem;
+                    right: 11rem;
+                }
+            }
+
+        }
+    }
+
+}
+
+
+//FOoter
+footer{
+    @include backDegrad2;
+    height: 33rem;
+    color:$white;
+    font-size: 1.4rem;
+
+    & > .container{
+
+        & > .row{
+            height: 16.5rem;
+
+            & > div{
+
+                &:first-child{
+                    padding-left: 0;
+                }
+
+                &:last-child{
+                    padding-right: 0;
+                }
+            }
+            
+            &:first-child{
+                border-bottom: 0.2rem solid $gray3;
+
+                & > div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    padding-bottom: 4rem;
+                }
+            }
+
+            &:last-child{
+
+                & > div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    padding-top: 4rem;
+
+                    &:last-child{
+                        ul{
+                            li{
+                                margin-right: 0;
+                                margin-left: 3rem;
+
+                                &.logoFooter{
+                                    width: 15rem;
+                                    height: auto;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    a{
+        color:$white;
+    }
+
+    p{
+        margin: 0;
+    }
+}
+
+
+//Lsita de redes 
+.listRedes{
+    
+
+    li{
+        a{
+            font-size: 2.8rem!important;
+            margin-right: 1.2rem!important;
+            @include transAnim;
+            height: 5.6rem;
+            display: flex;
+            //justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 990px){
+
+    footer{
+        height: auto;
+
+        .container{
+            .row{
+
+                div{
+                    flex:0 0 100%;
+                    max-width: 100%;
+                    text-align: center;
+                }
+
+                &:first-child{
+                    height: auto;
+
+                    div{
+                        &:first-child{
+                            padding-top: 3rem;
+                        }
+                    }
+                }
+
+                &:last-child{
+                    height: auto;
+
+                    div{
+                        &:first-child{
+                            padding-right: 0;
+
+                            .listRedes{
+                                li{
+                                    text-align: center;
+                                    display: inline-flex;
+                                    margin-right: 0;
+
+                                    a{
+                                        flex: 0 0 100%;
+                                        max-width: 100%;
+                                        justify-content: center;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:last-child{
+                            padding-left: 0;
+
+                            ul{
+                                display: flex;
+                                flex-wrap: wrap;
+
+                                li{
+                                    flex:0 0 calc(100% / 3);
+                                    margin: 0;
+                                    text-align: center;
+
+                                    &:last-child{
+                                        flex:0 0 100%;
+                                        max-width: 100%;
+                                        margin-top: 4rem;
+                                        margin-bottom: 4rem;
+
+                                        img{
+                                            width: 18rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+//Csaja de titulos
+.afterHeader{
+    background-color: $gray;
+    color:$white;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+
+    &.ahTitle{
+        height: 42rem;
+        background-color: $blue2;
+        display: flex;
+        align-items: center;
+        //justify-content: start;
+        //padding-left: 24rem;
+        position: relative;
+
+        h2{
+            font-size: 5rem;
+            flex:0 0 102rem;
+            max-width: 102rem;
+        }
+
+        .ahtPleca{
+            //border:1px solid red;
+            width: 26rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+        }
+    }
+}

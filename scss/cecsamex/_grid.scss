@@ -1,0 +1,135 @@
+// @mixin w-gc($number){
+
+//     flex-basis: calc(100% / 12 * 1);
+    
+// }
+
+// @mixin sexy-border($color, $width) {
+//     border: {
+//       color: $color;
+//       width: $width;
+//       style: dashed;
+//     }
+// }
+
+.container{
+    padding: 0 15px;
+    //width:100%;
+    max-width: 1320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    /*& > div{
+        //background-color: greenyellow;
+        border:1px solid #DEDEDE;
+        
+    }*/ 
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    box-sizing: border-box;
+
+    [class*="col-"]{
+        flex:0 0 100%;
+        box-sizing: border-box;
+        padding: 0 15px;
+        position: relative;
+    }
+}
+
+.col-1{
+    //@include w-gc(1);
+    //@include sexy-border(blue, 1in);
+    flex:0 0 calc(100% / 12 * 1);
+    max-width:calc(100% / 12 * 1);
+}
+
+.col-2{
+    //@include w-gc(2);
+    flex:0 0 calc(100% / 12 * 2);
+    max-width:calc(100% / 12 * 2);
+}
+
+.col-3{
+    //@include w-gc(3);
+    flex:0 0 calc(100% / 12 * 3);
+    max-width:calc(100% / 12 * 3);
+}
+
+.col-4{
+    //@include w-gc(3);
+    flex:0 0 calc(100% / 12 * 4);
+    max-width:calc(100% / 12 * 4);
+}
+
+.col-5{
+    //@include w-gc(3);
+    flex:0 0 calc(100% / 12 * 5);
+    max-width:calc(100% / 12 * 5);
+}
+
+.col-6{
+    //@include w-gc(3);
+    flex:0 0 calc(100% / 12 * 6);
+    max-width:calc(100% / 12 * 6);
+}
+
+.col-7{
+    //@include w-gc(3);
+    flex:0 0 calc(100% / 12 * 7);
+    max-width:calc(100% / 12 * 7);
+}
+
+.col-8{
+    //@include w-gc(3);
+    flex:0 0 calc(100% / 12 * 8);
+    max-width:calc(100% / 12 * 8);
+}
+
+.col-9{
+    //@include w-gc(3);
+    flex:0 0 calc(100% / 12 * 9);
+    max-width:calc(100% / 12 * 9);
+}
+
+.col-10{
+    //@include w-gc(3);
+    flex:0 0 calc(100% / 12 * 10);
+    max-width:calc(100% / 12 * 10);
+}
+
+.col-11{
+    //@include w-gc(3);
+    flex:0 0 calc(100% / 12 * 11);
+    max-width:calc(100% / 12 * 11);
+}
+
+.col-12{
+    //@include w-gc(3);
+    flex:0 0 calc(100% / 12 * 12);
+    max-width:calc(100% / 12 * 12);
+}
+
+// .muestra-grid{
+
+//     .gc-row{
+
+//         & > div{
+//             background-color: #CCC;
+//             text-align: center;
+//             border:1px solid #DEDEDE;
+//             padding-top:10px!important;
+//             padding-bottom: 10px!important;
+//         }
+
+//     }
+
+    
+// }
+
+
+

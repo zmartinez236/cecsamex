@@ -1,0 +1,225 @@
+//Estilos en general
+.wrap{
+    padding: 6rem 0;
+}
+
+.titleCat{
+    @include NuniBase;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 3rem
+}
+.listSt1{
+    @include NuniBase;
+    font-size: 1.6rem;
+
+    li{
+        a{
+            color:$black;
+            display: block;
+            padding: 0.5rem 0;
+            @include transAnim;
+
+            &:hover{
+                font-weight: bold;
+            }
+        }
+
+        &.active{
+            a{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+//Dropdown
+.dropdown{
+    @include NuniBase;
+    font-size: 1.6rem;
+    position: relative;
+    display: inline-flex;
+    //width: auto;
+
+    .ddText{
+        //border: 1px solid red;
+        height: 2.4rem;
+        cursor: pointer;
+        //display: flex;
+        //align-items: center;
+
+        i{
+            font-size: 1.8rem;
+            vertical-align: sub;
+            display: inline-block;
+            transform: rotate(0deg);
+            @include transAnim;
+        }
+    }
+
+    .ddList{
+        //border:1px solid red;
+        width: 24rem;
+        position: absolute;
+        top: 2.4rem;
+        right: -4rem;
+        display: none;
+        z-index: 1;
+        background-color: $white;
+        padding-top: 0.5rem;
+
+        ul{
+            margin: 0;
+
+            li{
+                font-size: 1.4rem;
+                padding: 0.8rem 6.5rem 0.8rem 1rem;
+                cursor: pointer;
+                @include transAnim;
+
+                i{
+                    font-size: 2rem;
+                    margin-left: 1rem;
+                }
+
+                &:hover,
+                &.active{
+                    background-color: $black;
+                    color:$white;
+                }
+            }
+        }
+    }
+
+    &.open{
+
+        .ddText{
+            i{
+                transform: rotate(-180deg);
+            }
+        }
+
+        .ddList{
+            display: block;
+        }
+    }
+}
+
+
+//Caja del producto
+.boxProd{
+    margin-bottom: 2rem;
+    //cursor: pointer;
+
+    .bpImagen{
+        border:0.1rem solid $red;
+        display: block;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .bpDatos{
+        display: flex;
+        margin-top: 1rem;
+
+        & > div{
+            flex:0 0 50%;
+            max-width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .bpNombre{
+            @include NuniBase;
+            font-weight: bold;
+        }
+
+        .bpIconos{
+            justify-content: end;
+
+            i{
+                font-size: 2.4rem;
+            }
+        }
+    }
+}
+
+//Detalle producto
+.detalleProducto{
+    
+    .dpImagen{
+        border:0.1rem solid $red;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .dpIconos{
+        margin-top: 1rem;
+
+        i{
+            font-size: 3.5rem;
+        }
+    }
+}
+.nombreProducto{
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+.descProducto{
+    @include NuniBase;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.listaProducto{
+    list-style: disc;
+    padding-left: 2rem;
+
+    li{
+        @include NuniBase;
+        font-size: 1.4rem;
+        padding: 0.4rem 1rem;
+    }
+}
+
+.tableProducto{
+    @include NuniBase;
+    font-size: 1.2rem;
+    width: 100%;
+    table-layout: fixed;
+    margin: 2rem 0;
+    border-collapse: collapse;
+
+    thead{
+        tr{
+            th{
+                background-color: $black;
+                color:$white;
+                padding: 0.6rem 1rem;
+                text-transform: uppercase;
+                border-right: 0.1rem solid $white;
+                border-bottom: 0.1rem solid $white;
+
+                &:last-child{
+                    border-right: none;
+                }
+            }
+        }
+    }
+
+    tbody{
+        tr{
+            td{
+                text-align: center;
+                padding: 0.4rem 1rem;
+                border-bottom: 0.1rem solid $black;
+            }
+        }
+    }
+}
