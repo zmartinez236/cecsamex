@@ -49,7 +49,7 @@ document.getElementById("headerWeb").innerHTML =
                     '<a href="productos.html">Productos</a>'+
                 '</li>'+
                 '<li id="menu-contacto">'+
-                    '<a href="#">Contáctanos</a>'+
+                    '<a href="contacto.html">Contáctanos</a>'+
                 '</li>'+
                 '<li id="menu-preguntas">'+
                     '<a href="preguntas.html">Preguntas Frecuentes</a>'+
@@ -143,7 +143,7 @@ document.getElementById("headerWeb").innerHTML =
         '<div class="cnOffCanvasR">'+
             '<ul>'+
                 '<li>'+
-                    '<a href="">Newsletter</a>'+
+                    '<div class="butNewlatter">Newsletter</div>'+
                 '</li>'+
                 '<li>'+
                     '<a href="aviso.html">Aviso de Privacidad</a>'+

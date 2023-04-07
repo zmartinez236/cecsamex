@@ -337,6 +337,13 @@ header{
                             opacity: 0.6;
                         }
                     }
+
+                    & > div{
+                        cursor: pointer;
+                        font-size: 1.6rem;
+                        @include transAnim;
+                        padding: 0.8rem 0;
+                    }
                 }
 
                 &.listRedes{
@@ -499,6 +506,10 @@ footer{
                             li{
                                 margin-right: 0;
                                 margin-left: 3rem;
+
+                                div{
+                                    cursor: pointer;
+                                }
 
                                 &.logoFooter{
                                     width: 15rem;

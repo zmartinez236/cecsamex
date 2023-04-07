@@ -1,6 +1,15 @@
 //Estilos en general
-.wrap{
+.wrap,
+.wrap-contacto,
+.wrap-aviso,
+.wrap-preguntas,
+.wrap-detalle,
+.wrap-producto{
     padding: 6rem 0;
+
+    &.wrapNoPad{
+        padding: 0;
+    }
 }
 
 .titleCat{
@@ -314,3 +323,278 @@
     font-size: 1.6rem;
     @include NuniBase;
 }
+
+
+
+
+//Formulario
+
+.titleForm{
+    @include NuniBase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.boxForm{
+    @include NuniBase;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.6rem;
+
+    label{
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+
+        span{
+            color:$red;
+            margin-left: 0.4rem;
+        }
+    }
+
+    small{
+        color:$red;
+        //flex:0 0 100%;
+        //max-width: 100%;
+        text-align: right;
+        opacity: 0;
+        visibility: hidden;
+        @include transAnim;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea{
+        height: 3rem;
+        border-color:$black;
+        border-style: solid;
+        border-width: 0 0 0.1rem 0;
+        padding: 0.4rem 1rem;
+        box-sizing: border-box;
+    }
+
+    &.bfError{
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea{
+            border-color:$red;
+        }
+
+
+        small{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+p{
+    input[type="checkbox"]{
+        vertical-align: top;
+    }
+}
+
+.boxButton{
+    margin: 3rem 0;
+}
+
+//BOTNES
+.btRed,
+.btWhi{
+    background-color: $red;
+    color:$white;
+    border:0.1rem solid $red;
+    font-weight: bold;
+    @include NuniBase;
+    font-size: 1.6rem;
+    padding: 0.8rem 1.6rem;
+    cursor: pointer;
+
+    &.btModal{
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+    }
+}
+
+.btWhi{
+    background-color: $white;
+    color:$black;
+    border-color: $white;
+    font-weight: normal;
+    text-transform: none!important;
+}
+
+.bgGray{
+    background-color: $gray5;
+}
+
+//caja mapa
+.boxMapa{
+    height: 53rem;
+    box-sizing: border-box;
+
+    //position: absolute;
+    //top: 0;
+    //left: 0;
+    //width: 55vw;
+
+    iframe{
+        width: 100%;
+        height: 53rem;
+    }
+}
+
+.boxMapaDir{
+    box-sizing: border-box;
+    //border:1px solid red;
+    //width: 50rem;
+    height: 53rem;
+    overflow-x: auto;
+    padding: 6rem 0 3rem 0;
+    //margin-left: auto;
+    @include NuniBase;
+    
+
+    .bmInfo{
+        margin-bottom: 3rem;
+
+        b{
+            @include montseBase;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        span{
+            color:$red;
+            display: block;
+            
+        }
+        
+    }
+
+}
+
+.container-fluid.cfContacto{
+    .row{
+        & > div{
+            padding:0;
+        }
+    }
+}
+
+
+
+///MODAL
+.boxModal{
+    position: fixed;
+    //top: 0;
+    top:-100%;
+    right: 0;
+    // bottom: 0;
+    left:0;
+    background-color: #00000080;
+    z-index: 10;
+    //width: 100vw;
+    height: 100vh;
+    
+    @include transAnim2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bmContent{
+        background-color: $white;
+        width: 38rem;
+        padding: 3rem 5rem;
+        
+        h3{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            margin: 3rem 0;
+        }
+
+        img{
+            width: 3.2rem;
+            margin: 0 auto;
+            display: block;
+        }
+
+        p{
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        & > small{
+            width: 20rem;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+
+            a{
+                color:$black;
+                text-decoration: underline;
+            }
+        }
+
+        .formModal{
+            display: flex;
+            flex-wrap: wrap;
+
+            .boxForm{
+                //margin-bottom: 2rem;
+                flex:0 0 100%;
+                max-width: 100%;
+                box-sizing: border-box;
+
+                label{
+                    text-transform: none;
+                }
+
+                input{
+                    border-width: 0.1rem;
+                }
+
+                &:nth-child(2),
+                &:nth-child(3){
+                    flex:0 0 50%;
+                    max-width: 50%;
+                }
+
+                &:nth-child(2){
+                    padding-right: 1rem;
+                }
+                &:nth-child(3){
+                    padding-left: 1rem;
+                }
+            }
+        }
+
+        .btRed{
+            margin: 2rem 0 1rem;
+        }
+        .btWhi{
+            margin: 0 0 2rem;
+        }
+    }
+
+    &.show{
+        top:0;
+    }
+}
+
+//form
+form{
+    width: 100%;
+}
+
+

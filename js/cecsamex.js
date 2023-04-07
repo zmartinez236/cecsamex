@@ -44,3 +44,10 @@ $('.ddText').click(function(){
 $('.bcTitle').click(function(){
     $(this).parent().toggleClass('collapse');
 });
+
+//modal
+
+$('.butNewlatter').click(function(){
+    $('.boxModal').toggleClass('show');
+    $('body').css('overflow','hidden');
+});

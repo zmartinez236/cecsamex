@@ -42,10 +42,10 @@ document.getElementById("footerWeb").innerHTML =
                         '<a href="aviso.html">Aviso de Privacidad</a>'+
                     '</li>'+
                     '<li>'+
-                        '<a href="#">Newslatter</a>'+
+                        '<div class="butNewlatter">Newslatter</div>'+
                     '</li>'+
                     '<li>'+
-                        '<a href="#">&#169; 2023 CECSAMEX</a>'+
+                        '<div>&#169; 2023 CECSAMEX</div>'+
                     '</li>'+
                     '<li class="logoFooter">'+
                         '<img src="img/logo_empresa_01.svg" />'+
