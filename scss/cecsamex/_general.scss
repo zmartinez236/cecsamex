@@ -5,13 +5,15 @@
 .wrap-preguntas,
 .wrap-detalle,
 .wrap-producto,
-.wrap-tienda{
+.wrap-tienda,
+.wrap-index{
     padding: 6rem 0;
     box-sizing: border-box;
 
     &.wrapNoPad{
         padding: 0;
     }
+
 }
 
 .wrap-tienda{
@@ -19,6 +21,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.wrap-index{
+    &.wiBackground{
+        @include backDegrad;
+    }
 }
 
 .titleCat{
@@ -664,3 +672,63 @@ form{
     }
 }
 
+///Index 
+
+
+.boxSlider{
+    //height: 67rem;
+    height: 60rem;
+}
+
+.boxImageIndex{
+    position: relative;
+    height: 74rem;
+    
+    img{
+        position: absolute;
+        top:0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        @include transAnim;
+
+        &.active{
+            opacity: 1;
+            visibility: visible;
+        }
+
+    }
+}
+.biiText{
+    color:$white;
+    @include NuniBase;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.biiMenu{
+    height: calc(74rem - 27px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    li{
+        @include NuniBase;
+        color:$white;
+        @include transAnim2;
+        opacity: 0.6;
+        font-size: 6rem;
+        cursor:pointer;
+
+        &:hover,
+        &.active{
+            @include montseBase;
+            font-weight: bold;
+            opacity: 1;
+        }
+    }
+}

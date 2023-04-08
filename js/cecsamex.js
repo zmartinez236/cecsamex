@@ -51,3 +51,25 @@ $('.butNewlatter').click(function(){
     $('.boxModal').toggleClass('show');
     $('body').css('overflow','hidden');
 });
+
+//Cambio de imagenes en el index
+$('#liAgri').click(function(){
+    $(this).siblings().removeClass('active');
+    $('#biiNum1').addClass('active').siblings().removeClass('active');
+});
+$('#liCon').click(function(){
+    $(this).siblings().removeClass('active');
+    $('#biiNum2').addClass('active').siblings().removeClass('active');
+});
+$('#liGan').click(function(){
+    $(this).siblings().removeClass('active');
+    $('#biiNum3').addClass('active').siblings().removeClass('active');
+});
+$('#liFer').click(function(){
+    $(this).siblings().removeClass('active');
+    $('#biiNum4').addClass('active').siblings().removeClass('active');
+});
+$('#liSeg').click(function(){
+    $(this).siblings().removeClass('active');
+    $('#biiNum5').addClass('active').siblings().removeClass('active');
+});

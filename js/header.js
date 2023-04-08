@@ -6,7 +6,7 @@ document.getElementById("headerWeb").innerHTML =
         '</div>'+
 
         '<div class="cnLogo">'+
-            '<a href="#">'+
+            '<a href="index.html">'+
                 '<img src="/img/logo_star.png">'+
             '</a>'+
         '</div>'+
