@@ -14,7 +14,7 @@ document.getElementById("headerWeb").innerHTML =
         '<div class="cnMenu">'+
             '<ul id="menuNav" class="listInline">'+
                 '<li id="menu-tienda">'+
-                    '<a href="#">Tienda</a>'+
+                    '<a href="tienda.html">Tienda</a>'+
                 '</li>'+
                 '<li id="menu-nuestra">'+
                     '<div class="dropdownHeader">'+
