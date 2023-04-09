@@ -27,16 +27,16 @@ document.getElementById("headerWeb").innerHTML =
                                 '<div>'+
                                     '<ul>'+
                                         '<li>'+
-                                            '<a href="#">Quiénes somos</a>'+
+                                            '<a href="nuestra.html">Quiénes somos</a>'+
                                         '</li>'+
                                         '<li>'+
-                                            '<a href="#">Nuestras políticas</a>'+
+                                            '<a href="nuestra.html">Nuestras políticas</a>'+
                                         '</li>'+
                                         '<li>'+
-                                            '<a href="#">Cronología</a>'+
+                                            '<a href="nuestra.html">Cronología</a>'+
                                         '</li>'+
                                         '<li>'+
-                                            '<a href="#">Video Corporativo</a>'+
+                                            '<a href="nuestra.html">Video Corporativo</a>'+
                                         '</li>'+
                                     '</ul>'+
                                 '</div>'+

@@ -87,6 +87,10 @@ header{
                         font-size: 1.6rem;
                         @include transAnim;
                     }
+
+                    &.active{
+                        font-weight: bold;
+                    }
                 }
 
                 .ddMenu{
@@ -369,6 +373,10 @@ header{
 
                                     i{
                                         display: none;
+                                    }
+
+                                    &.active{
+                                        font-weight: bold;
                                     }
                                 }
 

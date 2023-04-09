@@ -6,7 +6,8 @@
 .wrap-detalle,
 .wrap-producto,
 .wrap-tienda,
-.wrap-index{
+.wrap-index,
+.wrap-nuestra{
     padding: 6rem 0;
     box-sizing: border-box;
 
@@ -731,4 +732,133 @@ form{
             opacity: 1;
         }
     }
+}
+
+.boxDisplayNuestra{
+    background-image: url('../img/img_nuestra_empresa.jpg');
+    height: calc(100vh - 4.5rem);
+    display: flex;
+    align-items: center;
+    background-position: bottom;
+
+    & > .container{
+        flex:0 0 1320px;
+
+        h2{
+            color:$white;
+            position: relative;
+            font-size: 10rem;
+            line-height: 10rem;
+            text-transform: uppercase;
+
+            &::before{
+                content: url('../img/punta_01.svg');
+                display: block;
+                width: 9rem;
+                //height: 15rem;
+                position: absolute;
+                top: -9rem;
+                left: 0.6rem;
+            }
+        }
+    }
+
+    & > .bdnPleca{
+        width: 26rem;
+        position: absolute;
+        bottom: 8rem;
+        left: 0;
+        display: flex;
+    }
+}
+
+.navbarNuestra{
+    @include backDegrad;
+    height: 4.5rem;
+
+    .nbnList{
+        width: 100%;
+        //border:1px solid red;
+        display: flex;
+
+        li{
+            flex:0 0 calc(100% / 4);
+            max-width: calc(100% / 4);
+            height: 4.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:$white;
+            font-size: 1.6rem;
+            cursor: pointer;
+            box-sizing: border-box;
+            @include transAnim;
+            @include NuniBase;
+
+            &:hover{
+                opacity: 0.6;
+            }
+
+            &.active{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.tabContent{
+
+    .tcItem{
+        //border:1px solid blue;
+        display: none;
+        min-height: 20rem;
+
+        &.active{
+            display: block;
+        }
+
+        &.tciPad{
+            padding: 10rem 0;
+        }
+    }
+}
+
+.boxVideo{
+    width: 100%;
+    height: 75rem;
+
+    iframe{
+        width: 100%;
+        height: 75rem;
+    }
+}
+
+.contentImgNues{
+    width: 100%;
+
+    img{
+        width: 100%;
+    }
+}
+
+.contentTextNues{
+    h3{
+        font-size: 3.3rem;
+        margin-top: 0;
+    }
+
+    p{
+        font-size: 1.6rem;
+        @include NuniBase;
+        line-height: 2.6rem;
+
+        &.ctnTitle{
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.rowPad10{
+    padding: 10rem 0;
 }
