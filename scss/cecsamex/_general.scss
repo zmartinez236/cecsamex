@@ -7,53 +7,54 @@
 .wrap-producto,
 .wrap-tienda,
 .wrap-index,
-.wrap-nuestra{
+.wrap-nuestra {
     padding: 6rem 0;
     box-sizing: border-box;
 
-    &.wrapNoPad{
+    &.wrapNoPad {
         padding: 0;
     }
 
 }
 
-.wrap-tienda{
+.wrap-tienda {
     height: calc(100vh - 45px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.wrap-index{
-    &.wiBackground{
+.wrap-index {
+    &.wiBackground {
         @include backDegrad;
     }
 }
 
-.titleCat{
+.titleCat {
     @include NuniBase;
     font-size: 2rem;
     margin-top: 0;
     margin-bottom: 3rem
 }
-.listSt1{
+
+.listSt1 {
     @include NuniBase;
     font-size: 1.6rem;
 
-    li{
-        a{
-            color:$black;
+    li {
+        a {
+            color: $black;
             display: block;
             padding: 0.5rem 0;
             @include transAnim;
 
-            &:hover{
+            &:hover {
                 font-weight: bold;
             }
         }
 
-        &.active{
-            a{
+        &.active {
+            a {
                 font-weight: bold;
             }
         }
@@ -61,21 +62,21 @@
 }
 
 //Dropdown
-.dropdown{
+.dropdown {
     @include NuniBase;
     font-size: 1.6rem;
     position: relative;
     display: inline-flex;
     //width: auto;
 
-    .ddText{
+    .ddText {
         //border: 1px solid red;
         height: 2.4rem;
         cursor: pointer;
         //display: flex;
         //align-items: center;
 
-        i{
+        i {
             font-size: 1.8rem;
             vertical-align: sub;
             display: inline-block;
@@ -84,7 +85,7 @@
         }
     }
 
-    .ddList{
+    .ddList {
         //border:1px solid red;
         width: 24rem;
         position: absolute;
@@ -95,38 +96,38 @@
         background-color: $white;
         padding-top: 0.5rem;
 
-        ul{
+        ul {
             margin: 0;
 
-            li{
+            li {
                 font-size: 1.4rem;
                 padding: 0.8rem 6.5rem 0.8rem 1rem;
                 cursor: pointer;
                 @include transAnim;
 
-                i{
+                i {
                     font-size: 2rem;
                     margin-left: 1rem;
                 }
 
                 &:hover,
-                &.active{
+                &.active {
                     background-color: $black;
-                    color:$white;
+                    color: $white;
                 }
             }
         }
     }
 
-    &.open{
+    &.open {
 
-        .ddText{
-            i{
+        .ddText {
+            i {
                 transform: rotate(-180deg);
             }
         }
 
-        .ddList{
+        .ddList {
             display: block;
         }
     }
@@ -134,39 +135,39 @@
 
 
 //Caja del producto
-.boxProd{
+.boxProd {
     margin-bottom: 2rem;
     //cursor: pointer;
 
-    .bpImagen{
-        border:0.1rem solid $red;
+    .bpImagen {
+        border: 0.1rem solid $red;
         display: block;
 
-        img{
+        img {
             width: 100%;
         }
     }
 
-    .bpDatos{
+    .bpDatos {
         display: flex;
         margin-top: 1rem;
 
-        & > div{
-            flex:0 0 50%;
+        &>div {
+            flex: 0 0 50%;
             max-width: 50%;
             display: flex;
             align-items: center;
         }
 
-        .bpNombre{
+        .bpNombre {
             @include NuniBase;
             font-weight: bold;
         }
 
-        .bpIconos{
+        .bpIconos {
             justify-content: end;
 
-            i{
+            i {
                 font-size: 2.4rem;
             }
         }
@@ -174,48 +175,49 @@
 }
 
 //Detalle producto
-.detalleProducto{
-    
-    .dpImagen{
-        border:0.1rem solid $red;
+.detalleProducto {
 
-        img{
+    .dpImagen {
+        border: 0.1rem solid $red;
+
+        img {
             width: 100%;
         }
     }
 
-    .dpIconos{
+    .dpIconos {
         margin-top: 1rem;
 
-        i{
+        i {
             font-size: 3.5rem;
         }
     }
 }
-.nombreProducto{
+
+.nombreProducto {
     font-size: 3rem;
     margin-top: 0;
     margin-bottom: 4rem;
 }
 
-.descProducto{
+.descProducto {
     @include NuniBase;
     font-size: 1.4rem;
     line-height: 2.4rem;
 }
 
-.listaProducto{
+.listaProducto {
     list-style: disc;
     padding-left: 2rem;
 
-    li{
+    li {
         @include NuniBase;
         font-size: 1.4rem;
         padding: 0.4rem 1rem;
     }
 }
 
-.tableProducto{
+.tableProducto {
     @include NuniBase;
     font-size: 1.2rem;
     width: 100%;
@@ -223,26 +225,26 @@
     margin: 2rem 0;
     border-collapse: collapse;
 
-    thead{
-        tr{
-            th{
+    thead {
+        tr {
+            th {
                 background-color: $black;
-                color:$white;
+                color: $white;
                 padding: 0.6rem 1rem;
                 text-transform: uppercase;
                 border-right: 0.1rem solid $white;
                 border-bottom: 0.1rem solid $white;
 
-                &:last-child{
+                &:last-child {
                     border-right: none;
                 }
             }
         }
     }
 
-    tbody{
-        tr{
-            td{
+    tbody {
+        tr {
+            td {
                 text-align: center;
                 padding: 0.4rem 1rem;
                 border-bottom: 0.1rem solid $black;
@@ -252,12 +254,12 @@
 }
 
 //Box collapse de preguntas frecuentes
-.boxCollapse{
+.boxCollapse {
     @include NuniBase;
     border-bottom: 0.1rem solid $black;
     padding-bottom: 2rem;
 
-    .bcTitle{
+    .bcTitle {
         padding: 2rem 0 0.5rem;
         font-size: 1.6rem;
         font-weight: bold;
@@ -265,7 +267,7 @@
         position: relative;
         @include transAnim;
 
-        i{
+        i {
             font-style: normal;
             font-size: 2.4rem;
             font-weight: lighter;
@@ -273,55 +275,55 @@
             right: 0;
             //top:0;
 
-            &::after{
+            &::after {
                 content: '+';
             }
         }
     }
 
-    .bcContent{
+    .bcContent {
         //padding: 1rem  0 2rem;
         font-size: 1.6rem;
         height: 0;
         overflow: hidden;
         @include transAnim;
 
-        p{
+        p {
             margin-bottom: 0;
         }
 
     }
 
-    &.collapse{
-        
-        .bcTitle{
-            color:$red;
+    &.collapse {
+
+        .bcTitle {
+            color: $red;
             margin-bottom: 1rem;
 
-            i{
-                color:$black;
+            i {
+                color: $black;
 
-                &::after{
+                &::after {
                     content: '-';
                 }
             }
         }
 
-        .bcContent{
+        .bcContent {
             height: auto;
         }
     }
 }
 
 //tabla en preguntas frecuentes
-.tableInfo{
+.tableInfo {
     width: 44rem;
     margin: 2rem 0;
 
-    tbody{
-        tr{
-            td{
-                &:first-child{
+    tbody {
+        tr {
+            td {
+                &:first-child {
                     font-weight: bold;
                     text-transform: uppercase;
                 }
@@ -329,15 +331,17 @@
         }
     }
 }
+
 //Colores
-.tRed{
-    color:$red;
+.tRed {
+    color: $red;
 }
-.tBold{
+
+.tBold {
     font-weight: bold;
 }
 
-.boxAvisoPrivacidad{
+.boxAvisoPrivacidad {
     font-size: 1.6rem;
     @include NuniBase;
 }
@@ -347,31 +351,31 @@
 
 //Formulario
 
-.titleForm{
+.titleForm {
     @include NuniBase;
     font-weight: bold;
     margin-bottom: 2rem;
 }
 
-.boxForm{
+.boxForm {
     @include NuniBase;
     display: flex;
     flex-direction: column;
     margin-bottom: 0.6rem;
 
-    label{
+    label {
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 0.5rem;
 
-        span{
-            color:$red;
+        span {
+            color: $red;
             margin-left: 0.4rem;
         }
     }
 
-    small{
-        color:$red;
+    small {
+        color: $red;
         //flex:0 0 100%;
         //max-width: 100%;
         text-align: right;
@@ -385,77 +389,77 @@
     input[type="email"],
     input[type="date"],
     select,
-    textarea{
+    textarea {
         height: 3rem;
-        border-color:$black;
+        border-color: $black;
         border-style: solid;
         border-width: 0 0 0.1rem 0;
         padding: 0.4rem 1rem;
         box-sizing: border-box;
     }
 
-    &.bfError{
+    &.bfError {
 
         input[type="text"],
         input[type="tel"],
         input[type="email"],
         input[type="date"],
         select,
-        textarea{
-            border-color:$red;
+        textarea {
+            border-color: $red;
         }
 
 
-        small{
+        small {
             opacity: 1;
             visibility: visible;
         }
     }
 }
 
-p{
-    input[type="checkbox"]{
+p {
+    input[type="checkbox"] {
         vertical-align: top;
     }
 }
 
-.boxButton{
+.boxButton {
     margin: 3rem 0;
 }
 
 //BOTNES
 .btRed,
-.btWhi{
+.btWhi {
     background-color: $red;
-    color:$white;
-    border:0.1rem solid $red;
+    color: $white;
+    border: 0.1rem solid $red;
     font-weight: bold;
     @include NuniBase;
     font-size: 1.6rem;
     padding: 0.8rem 1.6rem;
     cursor: pointer;
 
-    &.btModal{
+    &.btModal {
         text-transform: uppercase;
         display: block;
         width: 100%;
     }
 }
 
-.btWhi{
+.btWhi {
     background-color: $white;
-    color:$black;
+    color: $black;
     border-color: $white;
     font-weight: normal;
-    text-transform: none!important;
+    text-transform: none !important;
 }
 
-.bgGray{
+.bgGray {
     background-color: $gray5;
 }
 
 //caja mapa
-.boxMapa{
+.boxMapa {
     height: 53rem;
     box-sizing: border-box;
 
@@ -464,13 +468,13 @@ p{
     //left: 0;
     //width: 55vw;
 
-    iframe{
+    iframe {
         width: 100%;
         height: 53rem;
     }
 }
 
-.boxMapaDir{
+.boxMapaDir {
     box-sizing: border-box;
     //border:1px solid red;
     //width: 50rem;
@@ -479,32 +483,32 @@ p{
     padding: 6rem 0 3rem 0;
     //margin-left: auto;
     @include NuniBase;
-    
 
-    .bmInfo{
+
+    .bmInfo {
         margin-bottom: 3rem;
 
-        b{
+        b {
             @include montseBase;
             font-size: 2rem;
             margin-bottom: 1.5rem;
             display: block;
         }
 
-        span{
-            color:$red;
+        span {
+            color: $red;
             display: block;
-            
+
         }
-        
+
     }
 
 }
 
-.container-fluid.cfContacto{
-    .row{
-        & > div{
-            padding:0;
+.container-fluid.cfContacto {
+    .row {
+        &>div {
+            padding: 0;
         }
     }
 }
@@ -512,117 +516,119 @@ p{
 
 
 ///MODAL
-.boxModal{
+.boxModal {
     position: fixed;
     //top: 0;
-    top:-100%;
+    top: -100%;
     right: 0;
     // bottom: 0;
-    left:0;
+    left: 0;
     background-color: #00000080;
     z-index: 10;
     //width: 100vw;
     height: 100vh;
-    
+
     @include transAnim2;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .bmContent{
+    .bmContent {
         background-color: $white;
         width: 38rem;
         padding: 3rem 5rem;
-        
-        h3{
+
+        h3 {
             text-align: center;
             text-transform: uppercase;
             font-size: 1.8rem;
             margin: 3rem 0;
         }
 
-        img{
+        img {
             width: 3.2rem;
             margin: 0 auto;
             display: block;
         }
 
-        p{
+        p {
             text-align: center;
             margin-bottom: 3rem;
         }
 
-        & > small{
+        &>small {
             width: 20rem;
             text-align: center;
             display: block;
             margin: 0 auto;
 
-            a{
-                color:$black;
+            a {
+                color: $black;
                 text-decoration: underline;
             }
         }
 
-        .formModal{
+        .formModal {
             display: flex;
             flex-wrap: wrap;
 
-            .boxForm{
+            .boxForm {
                 //margin-bottom: 2rem;
-                flex:0 0 100%;
+                flex: 0 0 100%;
                 max-width: 100%;
                 box-sizing: border-box;
 
-                label{
+                label {
                     text-transform: none;
                 }
 
-                input{
+                input {
                     border-width: 0.1rem;
                 }
 
                 &:nth-child(2),
-                &:nth-child(3){
-                    flex:0 0 50%;
+                &:nth-child(3) {
+                    flex: 0 0 50%;
                     max-width: 50%;
                 }
 
-                &:nth-child(2){
+                &:nth-child(2) {
                     padding-right: 1rem;
                 }
-                &:nth-child(3){
+
+                &:nth-child(3) {
                     padding-left: 1rem;
                 }
             }
         }
 
-        .btRed{
+        .btRed {
             margin: 2rem 0 1rem;
         }
-        .btWhi{
+
+        .btWhi {
             margin: 0 0 2rem;
         }
     }
 
-    &.show{
-        top:0;
+    &.show {
+        top: 0;
     }
 }
 
 //form
-form{
+form {
     width: 100%;
 }
 
 
 //Seccion tienda 
-.wrap-tienda{
-    .boxInfoTienda{
-        
-        h2{
+.wrap-tienda {
+    .boxInfoTienda {
+
+        h2 {
             text-transform: uppercase;
-            color:$red;
+            color: $red;
             //font-size: 4.6rem;
             font-size: 8rem;
             margin: 0;
@@ -631,7 +637,7 @@ form{
             text-align: center;
         }
 
-        h3{
+        h3 {
             text-align: center;
             @include NuniBase;
             font-weight: bold;
@@ -640,11 +646,11 @@ form{
             margin: 0 0 2rem;
         }
 
-        p{
+        p {
             text-align: center;
             margin: 0 auto;
 
-            &.bitMensaje{
+            &.bitMensaje {
                 width: 60rem;
                 font-size: 1.6rem;
                 line-height: 2rem;
@@ -652,21 +658,22 @@ form{
             }
 
         }
-        .bitForm{
+
+        .bitForm {
             //border:1px solid red;
             width: 55rem;
             margin: 5rem auto 2rem;
             display: flex;
 
-            input{
-                flex:0 0 calc(100% - 12rem);
-                max-width:calc(100% - 12rem);
+            input {
+                flex: 0 0 calc(100% - 12rem);
+                max-width: calc(100% - 12rem);
                 padding: 0.4rem 1rem;
                 border-width: 0.1rem 0 0.1rem 0.1rem;
             }
 
-            .btRed{
-                flex:0 0 12rem;
+            .btRed {
+                flex: 0 0 12rem;
                 text-transform: uppercase;
             }
         }
@@ -676,18 +683,18 @@ form{
 ///Index 
 
 
-.boxSlider{
+.boxSlider {
     //height: 67rem;
     height: 60rem;
 }
 
-.boxImageIndex{
+.boxImageIndex {
     position: relative;
     height: 74rem;
-    
-    img{
+
+    img {
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
         bottom: 0;
         right: 0;
@@ -696,37 +703,38 @@ form{
         visibility: hidden;
         @include transAnim;
 
-        &.active{
+        &.active {
             opacity: 1;
             visibility: visible;
         }
 
     }
 }
-.biiText{
-    color:$white;
+
+.biiText {
+    color: $white;
     @include NuniBase;
     font-size: 2rem;
     margin: 0;
 }
 
-.biiMenu{
+.biiMenu {
     height: calc(74rem - 27px);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
 
-    li{
+    li {
         @include NuniBase;
-        color:$white;
+        color: $white;
         @include transAnim2;
         opacity: 0.6;
         font-size: 6rem;
-        cursor:pointer;
+        cursor: pointer;
 
         &:hover,
-        &.active{
+        &.active {
             @include montseBase;
             font-weight: bold;
             opacity: 1;
@@ -734,24 +742,24 @@ form{
     }
 }
 
-.boxDisplayNuestra{
+.boxDisplayNuestra {
     background-image: url('../img/img_nuestra_empresa.jpg');
     height: calc(100vh - 4.5rem);
     display: flex;
     align-items: center;
     background-position: bottom;
 
-    & > .container{
-        flex:0 0 1320px;
+    &>.container {
+        flex: 0 0 1320px;
 
-        h2{
-            color:$white;
+        h2 {
+            color: $white;
             position: relative;
             font-size: 10rem;
             line-height: 10rem;
             text-transform: uppercase;
 
-            &::before{
+            &::before {
                 content: url('../img/punta_01.svg');
                 display: block;
                 width: 9rem;
@@ -763,7 +771,7 @@ form{
         }
     }
 
-    & > .bdnPleca{
+    &>.bdnPleca {
         width: 26rem;
         position: absolute;
         bottom: 8rem;
@@ -772,93 +780,172 @@ form{
     }
 }
 
-.navbarNuestra{
+.navbarNuestra {
     @include backDegrad;
     height: 4.5rem;
 
-    .nbnList{
+    .nbnList {
         width: 100%;
         //border:1px solid red;
         display: flex;
 
-        li{
-            flex:0 0 calc(100% / 4);
+        li {
+            flex: 0 0 calc(100% / 4);
             max-width: calc(100% / 4);
             height: 4.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            color:$white;
+            color: $white;
             font-size: 1.6rem;
             cursor: pointer;
             box-sizing: border-box;
             @include transAnim;
             @include NuniBase;
 
-            &:hover{
+            &:hover {
                 opacity: 0.6;
             }
 
-            &.active{
+            &.active {
                 font-weight: bold;
             }
         }
     }
 }
 
-.tabContent{
+.tabContent {
 
-    .tcItem{
+    .tcItem {
         //border:1px solid blue;
         display: none;
         min-height: 20rem;
 
-        &.active{
+        &.active {
             display: block;
         }
 
-        &.tciPad{
+        &.tciPad {
             padding: 10rem 0;
         }
     }
 }
 
-.boxVideo{
+.boxVideo {
     width: 100%;
     height: 75rem;
 
-    iframe{
+    iframe {
         width: 100%;
         height: 75rem;
     }
 }
 
-.contentImgNues{
+.contentImgNues {
     width: 100%;
 
-    img{
+    img {
         width: 100%;
     }
 }
 
-.contentTextNues{
-    h3{
+.contentTextNues {
+    h3 {
         font-size: 3.3rem;
         margin-top: 0;
     }
 
-    p{
+    p {
         font-size: 1.6rem;
         @include NuniBase;
         line-height: 2.6rem;
 
-        &.ctnTitle{
+        &.ctnTitle {
             font-weight: bold;
             margin-bottom: 0;
         }
     }
 }
 
-.rowPad10{
+.rowPad10 {
     padding: 10rem 0;
+}
+
+//----------------Slider--------------------//
+#sliderIndex.carousel {
+    background: $blue2;
+    height: 60rem;
+
+    .flickity-page-dots{
+        //border:0.1rem solid red;
+        box-sizing: border-box;
+        bottom: 25px;
+
+        .dot{
+            background-color: $white;
+        }
+    }
+}
+  
+#sliderIndex .carousel-cell {
+    width: 100%;
+    //height: 200px;
+    height: 60rem;
+    margin-right: 10px;
+    background: $blue2;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+
+    img{
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .ccContent{
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        //border:1px solid red;
+        box-sizing: border-box;
+        padding-bottom: 12rem;
+        padding-left: 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+
+        h2{
+            // position: absolute;
+            // left: 0;
+            // bottom: 14rem;
+            color:$white;
+            font-size: 5rem;
+            margin-bottom: 2rem;
+        }
+
+        p{
+            color:$white;
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+    }
+
+    
+}
+  
+  /* cell number */
+#sliderIndex .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+    height: 60rem;
 }
