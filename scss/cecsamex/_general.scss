@@ -457,7 +457,12 @@ p {
 .bgGray {
     background-color: $gray5;
 }
-
+.bgBlue {
+    background-color: $blue2;
+}
+.tWhite{
+    color:$white;
+}
 //caja mapa
 .boxMapa {
     height: 53rem;
@@ -948,4 +953,88 @@ form {
     font-size: 80px;
     color: white;
     height: 60rem;
+}
+
+
+//Cronologia
+#sliderNuestra.carousel {
+    background:$blue2;
+    margin-top: 4rem;
+    height: 25rem;
+
+    .flickity-viewport{
+        height: 25rem!important;
+    }
+
+    .flickity-button{
+        top: auto;
+        bottom:-6rem;
+        z-index: 1;
+
+
+        &.flickity-prev-next-button.next{
+            right: auto;
+            left:10rem;
+        }
+    }
+}
+
+  
+#sliderNuestra .carousel-cell {
+    width: 28%;
+    height: 25rem;
+    margin-right: 10px;
+    //background: #8C8;
+    opacity: 0.6;
+    counter-increment: gallery-cell;
+}
+  
+#sliderNuestra .carousel-cell.is-selected {
+    //background: #ED2;
+    opacity: 1;
+}
+  
+/* cell number */
+#sliderNuestra .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 24rem;
+    font-size: 80px;
+    //color: white;
+    color:transparent;
+}
+
+.snContent{
+    width: 100%;
+    //border:1px solid red;
+    position: absolute;
+    top:0 ;
+    right: 0;
+    bottom:0;
+    left:0;
+    color:$white;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        @include NuniBase;
+        font-size: 1.6rem;
+        line-height: 3.4rem; 
+        text-align: center;
+        //color:$gray4;
+        position: relative;
+        z-index: 1;
+        opacity: 0.8;
+    }
+
+    div{
+        position: absolute;
+        font-size: 12rem;
+        @include montseBase;
+        font-weight: bold;
+        opacity: 0.2;
+    }
 }

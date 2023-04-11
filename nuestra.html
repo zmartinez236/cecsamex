@@ -14,6 +14,10 @@
     <!--Font iconos cecsamex-->
     <link href="/cecsamex-font/cecsamex-font.css" rel="stylesheet" integrity="" crossorigin="anonymous">
 
+    <!--archivos flickity-->
+    <link href="https://npmcdn.com/flickity@2/dist/flickity.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js" integrity="" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -42,9 +46,9 @@
                     <div class="col-12">
 
                         <ul class="nbnList">
-                            <li id="tabQui" class="active">Quiénes somos</li>
+                            <li id="tabQui">Quiénes somos</li>
                             <li id="tabNue">Nuestras Políticas</li>
-                            <li id="tabCro">Cronología</li>
+                            <li id="tabCro" class="active">Cronología</li>
                             <li id="tabVid">Video Corporativo</li>
                         </ul>
 
@@ -57,7 +61,7 @@
         <div class="tabContent">
 
             <!--Seccion Quienes somos-->
-            <div id="secQui" class="tcItem active">
+            <div id="secQui" class="tcItem">
                 <div class="container">
                     <div class="row rowPad10">
                         <div class="col-6">
@@ -148,8 +152,85 @@
             </div>
             
             <!--Seccion Cronologia-->
-            <div id="secCro" class="tcItem">
-                Cronología
+            <div id="secCro" class="tcItem active">
+                <div class="bgBlue">
+                    <div class="container">
+                        <div class="row rowPad10">
+                            <div class="col-12">
+                                <div class="contentTextNues tWhite">
+                                    <h3>NUESTRA<br>HISTORIA</h3>
+                                </div>
+                                
+                                <div id="sliderNuestra" class="carousel" data-flickity>
+                                    <div class="carousel-cell">
+
+                                        <div class="snContent">
+                                            <p>Somos una empresa que ofrece a sus clientes
+                                                productos y servicios de calidad, enfocada a
+                                                utilizar las nuevas tecnologías del mercado con
+                                                colaboradores comprometidos con el mismo
+                                                objetivo.</p>
+                                            <div>1988</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="carousel-cell">
+
+                                        <div class="snContent">
+                                            <p>Somos una empresa que ofrece a sus clientes
+                                                productos y servicios de calidad, enfocada a
+                                                utilizar las nuevas tecnologías del mercado con
+                                                colaboradores comprometidos con el mismo
+                                                objetivo.</p>
+                                            <div>1991</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="carousel-cell">
+
+                                        <div class="snContent">
+                                            <p>Somos una empresa que ofrece a sus clientes
+                                                productos y servicios de calidad, enfocada a
+                                                utilizar las nuevas tecnologías del mercado con
+                                                colaboradores comprometidos con el mismo
+                                                objetivo.</p>
+                                            <div>1994</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="carousel-cell">
+
+                                        <div class="snContent">
+                                            <p>Somos una empresa que ofrece a sus clientes
+                                                productos y servicios de calidad, enfocada a
+                                                utilizar las nuevas tecnologías del mercado con
+                                                colaboradores comprometidos con el mismo
+                                                objetivo.</p>
+                                            <div>1997</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="carousel-cell">
+
+                                        <div class="snContent">
+                                            <p>Somos una empresa que ofrece a sus clientes
+                                                productos y servicios de calidad, enfocada a
+                                                utilizar las nuevas tecnologías del mercado con
+                                                colaboradores comprometidos con el mismo
+                                                objetivo.</p>
+                                            <div>2000</div>
+                                        </div>
+
+                                    </div>
+                            
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!--Seccion video corporativo-->
