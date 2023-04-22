@@ -42,7 +42,7 @@ $('.ddText').click(function(){
 
 //Collapse 
 $('.bcTitle').click(function(){
-    $(this).parent().toggleClass('collapse');
+    $(this).parent().toggleClass('collapse').siblings().removeClass('collapse');
 });
 
 //modal
@@ -53,23 +53,23 @@ $('.butNewlatter').click(function(){
 });
 
 //Cambio de imagenes en el index
-$('#liAgri').click(function(){
+$('#liAgri').hover(function(){
     $(this).addClass('active').siblings().removeClass('active');
     $('#biiNum1').addClass('active').siblings().removeClass('active');
 });
-$('#liCon').click(function(){
+$('#liCon').hover(function(){
     $(this).addClass('active').siblings().removeClass('active');
     $('#biiNum2').addClass('active').siblings().removeClass('active');
 });
-$('#liGan').click(function(){
+$('#liGan').hover(function(){
     $(this).addClass('active').siblings().removeClass('active');
     $('#biiNum3').addClass('active').siblings().removeClass('active');
 });
-$('#liFer').click(function(){
+$('#liFer').hover(function(){
     $(this).addClass('active').siblings().removeClass('active');
     $('#biiNum4').addClass('active').siblings().removeClass('active');
 });
-$('#liSeg').click(function(){
+$('#liSeg').hover(function(){
     $(this).addClass('active').siblings().removeClass('active');
     $('#biiNum5').addClass('active').siblings().removeClass('active');
 });
@@ -91,3 +91,20 @@ $('#tabVid').click(function(){
     $(this).addClass('active').siblings().removeClass('active');
     $('#secVid').addClass('active').siblings().removeClass('active');
 });
+
+//Collapse
+//if( $('.boxCollapse').hasClass('collapse') ){
+//    $(this).siblings().removeClass('collapse');
+//}
+
+
+//Mostrar categorias
+$('.buttonHideCat').click(function(){
+    $('#boxCategorias').toggleClass('open');
+});
+
+
+
+
+
+

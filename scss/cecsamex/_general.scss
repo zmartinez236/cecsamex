@@ -189,7 +189,7 @@
         margin-top: 1rem;
 
         i {
-            font-size: 3.5rem;
+            font-size: 3rem;
         }
     }
 }
@@ -197,7 +197,8 @@
 .nombreProducto {
     font-size: 3rem;
     margin-top: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
 }
 
 .descProducto {
@@ -228,7 +229,7 @@
     thead {
         tr {
             th {
-                background-color: $black;
+                background-color: $gray;
                 color: $white;
                 padding: 0.6rem 1rem;
                 text-transform: uppercase;
@@ -435,8 +436,8 @@ p {
     border: 0.1rem solid $red;
     font-weight: bold;
     @include NuniBase;
-    font-size: 1.6rem;
-    padding: 0.8rem 1.6rem;
+    font-size: 1.4rem;
+    padding: 0.8rem 1.2rem;
     cursor: pointer;
 
     &.btModal {
@@ -467,6 +468,10 @@ p {
 .boxMapa {
     height: 53rem;
     box-sizing: border-box;
+    position: absolute;
+    right: 50vw;
+    left: 0;
+    width: 60vw;
 
     //position: absolute;
     //top: 0;
@@ -524,7 +529,7 @@ p {
 .boxModal {
     position: fixed;
     //top: 0;
-    top: -100%;
+    top: -103%;
     right: 0;
     // bottom: 0;
     left: 0;
@@ -541,13 +546,32 @@ p {
     .bmContent {
         background-color: $white;
         width: 38rem;
-        padding: 3rem 5rem;
+        padding: 3rem;
+        box-sizing: border-box;
+        position: relative;
+
+        .bmcClose{
+            border: 1px solid $gray;
+            width: 2rem;
+            height: 2rem;
+            /* border-radius: 90%; */
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            opacity: 0.6;
+        }
 
         h3 {
             text-align: center;
             text-transform: uppercase;
             font-size: 1.8rem;
-            margin: 3rem 0;
+            margin: 3rem 0 2rem;
+            @include NuniBase;
         }
 
         img {
@@ -635,7 +659,7 @@ form {
             text-transform: uppercase;
             color: $red;
             //font-size: 4.6rem;
-            font-size: 8rem;
+            font-size: 6rem;
             margin: 0;
             //line-height: normal;
             //line-height: 10rem;
@@ -647,7 +671,7 @@ form {
             @include NuniBase;
             font-weight: bold;
             text-transform: uppercase;
-            font-size: 3.4rem;
+            font-size: 2.4rem;
             margin: 0 0 2rem;
         }
 
@@ -657,7 +681,7 @@ form {
 
             &.bitMensaje {
                 width: 60rem;
-                font-size: 1.6rem;
+                font-size: 1.4rem;
                 line-height: 2rem;
                 font-style: italic;
             }
@@ -666,7 +690,7 @@ form {
 
         .bitForm {
             //border:1px solid red;
-            width: 55rem;
+            width: 45rem;
             margin: 5rem auto 2rem;
             display: flex;
 
@@ -675,10 +699,12 @@ form {
                 max-width: calc(100% - 12rem);
                 padding: 0.4rem 1rem;
                 border-width: 0.1rem 0 0.1rem 0.1rem;
+                box-sizing: border-box;
             }
 
             .btRed {
                 flex: 0 0 12rem;
+                max-width: 12rem;
                 text-transform: uppercase;
             }
         }
@@ -690,12 +716,12 @@ form {
 
 .boxSlider {
     //height: 67rem;
-    height: 60rem;
+    height: 50rem;
 }
 
 .boxImageIndex {
     position: relative;
-    height: 74rem;
+    height: 47rem;
 
     img {
         position: absolute;
@@ -724,7 +750,7 @@ form {
 }
 
 .biiMenu {
-    height: calc(74rem - 27px);
+    height: calc(48rem - 27px);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -749,28 +775,31 @@ form {
 
 .boxDisplayNuestra {
     background-image: url('../img/img_nuestra_empresa.jpg');
-    height: calc(100vh - 4.5rem);
+    //height: calc(100vh - 4.5rem);
+    height: calc(80vh - 4.5rem);
     display: flex;
     align-items: center;
     background-position: bottom;
+    position: relative;
 
     &>.container {
-        flex: 0 0 1320px;
+        flex: 0 0 1200px;
+        max-width: 1200px;
 
         h2 {
             color: $white;
             position: relative;
-            font-size: 10rem;
-            line-height: 10rem;
+            font-size: 7rem;
+            line-height: 6.5rem;
             text-transform: uppercase;
 
             &::before {
                 content: url('../img/punta_01.svg');
                 display: block;
-                width: 9rem;
+                width:5rem;
                 //height: 15rem;
                 position: absolute;
-                top: -9rem;
+                top: -7rem;
                 left: 0.6rem;
             }
         }
@@ -879,7 +908,7 @@ form {
 //----------------Slider--------------------//
 #sliderIndex.carousel {
     background: $blue2;
-    height: 60rem;
+    height: 50rem;
 
     .flickity-page-dots{
         //border:0.1rem solid red;
@@ -893,10 +922,10 @@ form {
 }
   
 #sliderIndex .carousel-cell {
-    width: 100%;
+    width: 66%;
     //height: 200px;
-    height: 60rem;
-    margin-right: 10px;
+    height: 50rem;
+    //margin-right: 10px;
     background: $blue2;
     border-radius: 5px;
     counter-increment: gallery-cell;
@@ -952,7 +981,7 @@ form {
     line-height: 200px;
     font-size: 80px;
     color: white;
-    height: 60rem;
+    height: 50rem;
 }
 
 
@@ -1038,3 +1067,47 @@ form {
         opacity: 0.2;
     }
 }
+
+.wrap-producto{
+
+    #boxCategorias{
+        
+        .buttonHideCat{
+            width: 4rem;
+            height: 4rem;
+            //border-radius: 90%;
+            background-color: $red;
+            position: absolute;
+            right: -4rem;
+            top:calc(50% - 3rem);
+            color:$white;
+            font-size: 2.8rem;
+            //display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            display: none;
+
+            i{
+                @include transAnim;
+                transform: rotate(-90deg);
+            }
+
+        }
+
+
+        &.open{
+            left: 0;
+
+            .buttonHideCat{
+
+                i{
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+}
+
+
+    

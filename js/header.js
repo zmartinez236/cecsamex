@@ -1,9 +1,9 @@
 document.getElementById("headerWeb").innerHTML =
 
     '<div class="contNav">'+
-        '<div class="cnButtonRespon">'+
-            '<i class="i-hamburguer"></i>'+
-        '</div>'+
+        //'<div class="cnButtonRespon">'+
+        //    '<i class="i-hamburguer"></i>'+
+        //'</div>'+
 
         '<div class="cnLogo">'+
             '<a href="index.html">'+
@@ -134,13 +134,14 @@ document.getElementById("headerWeb").innerHTML =
             '<i class="i-hamburguer"></i>'+
         '</div>'+
 
-        '<!--Menu responsivo-->'+
-        '<div class="cnOffCanvasL">'+
-            '<ul id="menuCanvas"></ul>'+
-        '</div>'+
+        //'<!--Menu responsivo-->'+
+        //'<div class="cnOffCanvasL">'+
+            //'<ul id="menuCanvas"></ul>'+
+        //'</div>'+
 
         '<!--Menu derecho-->'+
         '<div class="cnOffCanvasR">'+
+            '<ul id="menuCanvas"></ul>'+
             '<ul>'+
                 '<li>'+
                     '<div class="butNewlatter">Newsletter</div>'+

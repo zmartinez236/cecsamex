@@ -50,7 +50,7 @@ header{
                 margin: 0;
 
                 li{
-                    margin: 0 3.9rem;
+                    margin: 0 3rem;
 
                     a,
                     span{
@@ -105,7 +105,7 @@ header{
                     z-index: -1;
 
                     .ddmContent{
-                        width: 144rem;
+                        width: 121rem;
                         height: 42rem;
                         margin: 0 auto;
                         display: flex;
@@ -120,7 +120,7 @@ header{
                             }
 
                             &:last-child{
-                                margin-left: 19rem;
+                                margin-left: 10rem;
 
                                 ul{
                                     li{
@@ -138,9 +138,35 @@ header{
 
                         }
                     }
+
+                    // &:after{
+                    //     content: "";
+                    //     position: fixed;
+                    //     top:0;
+                    //     left: 0;
+                    //     right: 0;
+                    //     bottom: 0;
+                    //     background-color: #00000080;
+                    //     //background-color: #ff8033;
+                    //     //opacity: 0.2;
+                    //     z-index: -4;
+                    //     display: none;
+                    // }
                 }
 
                 &.open{
+
+                    &::after{
+                        content: "";
+                        background-color: #00000080;
+                        position: fixed;
+                        top: 4.5rem;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: -6;
+                    }
+
 
                     .ddButton{
                         i{
@@ -150,6 +176,10 @@ header{
 
                     .ddMenu{
                         top: 4.5rem;
+
+                        // &::after{
+                        //     display: block;
+                        // }
                     }   
                 }
             }
@@ -180,7 +210,7 @@ header{
                 position: absolute;
                 top: 0;
                 right: 3rem;
-                width: 97rem;
+                width: 88rem;
                 padding: 0.6rem 2rem;
                 box-sizing: border-box;
                 visibility: hidden;
@@ -207,8 +237,9 @@ header{
                 position: absolute;
                 top: 4.5rem;
                 right: 3rem;
-                width: 91rem;
+                width: 84rem;
                 margin-right: 2rem;
+                box-sizing: border-box;
 
                 ul{
                     margin:0;
@@ -423,6 +454,44 @@ header{
             left: auto;
             right: -40rem;
             padding-left: 5rem;
+            padding-top: 3rem;
+
+            #menuCanvas{
+                display: none;
+                margin-bottom: 0;
+
+                #menu-nuestra{
+                    .dropdownHeader{
+                        padding: 0;
+
+                        .ddButton{
+                            height: 38px;
+                            display: inline-flex;
+                            align-items: center;
+
+                            i{
+                                display: none;
+                            }
+                        }
+
+                        .ddMenu{
+                            .ddmContent{
+                                & > div{
+                                    &:first-child{
+                                        display: none;
+                                    }
+
+                                    &:last-child{
+                                        ul{
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
             &.show{
                 right: 0;
@@ -442,7 +511,7 @@ header{
             }
 
             .cnLogo{
-                margin-left: 8rem;
+                margin-left: 1rem;
             }
 
             .cnMenu{
@@ -456,8 +525,26 @@ header{
 
                 .cnsInput{
                     width: auto;
-                    left: 12rem;
-                    right: 11rem;
+                    left: 4rem;
+                    right: 10rem;
+                }
+
+                .cnsResultados{
+                    width: calc(100% - 50px);
+                    left: 25px;
+                    right: 25px;
+                    margin-right: 0;
+                }
+            }
+
+            .cnOffCanvasR{
+
+                #menuCanvas{
+                    display: block;
+                }
+
+                .listRedes{
+                    margin-top: 2rem!important;
                 }
             }
 
@@ -572,8 +659,8 @@ footer{
     footer{
         height: auto;
 
-        .container{
-            .row{
+        & >.container{
+            & > .row{
 
                 div{
                     flex:0 0 100%;
@@ -583,10 +670,16 @@ footer{
 
                 &:first-child{
                     height: auto;
+                    
 
                     div{
                         &:first-child{
                             padding-top: 3rem;
+                            padding-left: 1.5rem;
+                        }
+
+                        &:last-child{
+                            padding-right: 1.5rem;
                         }
                     }
                 }
