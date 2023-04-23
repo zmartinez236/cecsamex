@@ -12,7 +12,7 @@
 #headerWeb{
     .contNav{
 
-        .cnOffCanvasL,
+        //.cnOffCanvasL,
         .cnOffCanvasR{
             width: 100%;
         }
@@ -26,15 +26,17 @@
         }
 
         .cnOffCanvasR{
-            right: -100%;
+            //right: -100%;
+            @include transAnim;
 
             .cnocBox{
                 width: 80%;
                 right: -80%;
+                //display: none;
             }
 
             &.show{
-                right: 0;
+                //right: 0;
 
                 .cnocBox{
                     right: 0;

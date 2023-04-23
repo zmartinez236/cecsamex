@@ -73,7 +73,7 @@ header{
 
                     &.active{
                         a,span{
-                            font-weight: bold;
+                            font-weight: 900;
                         }
                     }
                 }
@@ -90,7 +90,7 @@ header{
                     }
 
                     &.active{
-                        font-weight: bold;
+                        font-weight: 900;
                     }
                 }
 
@@ -358,7 +358,7 @@ header{
             // width: 40rem;
             // padding-top: 5rem;
             // box-sizing: border-box;
-            // @include transAnim;
+            @include transAnim;
             // @include NuniBase;
 
             
@@ -478,7 +478,7 @@ header{
             }
 
             #menuCanvas{
-                display: none;
+                //display: none;
                 margin-bottom: 0;
 
                 #menu-nuestra{
@@ -491,20 +491,30 @@ header{
                             align-items: center;
 
                             i{
-                                display: none;
+                               //display: none;
+                               margin-left: 0.4rem;
                             }
                         }
 
                         .ddMenu{
                             .ddmContent{
                                 & > div{
+
                                     &:first-child{
                                         display: none;
                                     }
 
                                     &:last-child{
-                                        ul{
-                                            margin-bottom: 0;
+                                        ul.listaMenuLateral{
+                                            //margin-bottom: 0;
+                                            //margin-left: 2rem;
+                                            margin: 1rem 0 1rem 3rem;
+                                            list-style: square;
+                                            display: none;
+
+                                            &.open{
+                                                display: block;
+                                            }
                                         }
                                     }
                                 }
@@ -701,10 +711,6 @@ footer{
 
             br{
                 display: inline-block;
-            }
-    
-            span{
-                display:none;
             }
 
             p{

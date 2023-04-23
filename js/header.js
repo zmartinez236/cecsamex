@@ -25,7 +25,7 @@ document.getElementById("headerWeb").innerHTML =
                                     '<img src="img/logo_empresa_01.svg" />'+
                                 '</div>'+
                                 '<div>'+
-                                    '<ul>'+
+                                    '<ul class="listaMenuLateral">'+
                                         '<li>'+
                                             '<a href="nuestra.html">Quiénes somos</a>'+
                                         '</li>'+

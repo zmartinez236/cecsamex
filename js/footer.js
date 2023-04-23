@@ -3,7 +3,7 @@ document.getElementById("footerWeb").innerHTML =
     '<div class="container">'+
         '<div class="row">'+
             '<div class="col-4 textFooter">'+
-                '<p>Km. 7.5 Carretera Federal Puebla<br><span>-</span>Atlixco No. 7712,</p>'+
+                '<p>Km. 7.5 Carretera Federal <br>Puebla<span>-</span>Atlixco No. 7712,</p>'+
                 '<p>Tlaxcalancingo, San Andrés Cholula.<br>Puebla, México</p>'+
             '</div>'+
             '<div class="col-4">'+

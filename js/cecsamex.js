@@ -103,6 +103,9 @@ $('.buttonHideCat').click(function(){
     $('#boxCategorias').toggleClass('open');
 });
 
+$('.cnOffCanvasR .dropdownHeader').click(function(){
+    $('.listaMenuLateral').toggleClass('open');
+});
 
 
 
