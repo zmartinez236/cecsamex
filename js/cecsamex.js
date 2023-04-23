@@ -75,6 +75,11 @@ $('#liSeg').hover(function(){
 });
 
 //Tabs de segunda barra de navegacion dentro de Nuestra empresa
+//alto principal
+var alto = $('#secQui').height();
+$('.tabContent').height(alto);
+
+//tabs clicks
 $('#tabQui').click(function(){
     $(this).addClass('active').siblings().removeClass('active');
     $('#secQui').addClass('active').siblings().removeClass('active');
