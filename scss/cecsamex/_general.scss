@@ -783,7 +783,8 @@ form {
     height: calc(80vh - 4.5rem);
     display: flex;
     align-items: center;
-    background-position: bottom;
+    background-position: center;
+    background-size: contain;
     position: relative;
 
     &>.container {
