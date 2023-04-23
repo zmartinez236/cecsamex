@@ -194,6 +194,25 @@
             }
         }
 
+        .navbarNuestra{
+            .nbnList{
+                width: 100%;
+                overflow-x: scroll;
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+                
+                /* Hide scrollbar for Chrome, Safari and Opera */
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+                
+                li{
+                    flex: 0 0 40%;
+                    max-width: 40%;
+                }
+            }
+        }
+
         .tabContent{
 
             .tcItem{
