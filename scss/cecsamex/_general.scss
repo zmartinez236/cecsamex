@@ -778,13 +778,13 @@ form {
 }
 
 .boxDisplayNuestra {
-    background-image: url('../img/img_nuestra_empresa.jpg');
+    //background-image: url('../img/img_nuestra_empresa.jpg');
     //height: calc(100vh - 4.5rem);
     height: calc(80vh - 4.5rem);
     display: flex;
     align-items: center;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     position: relative;
 
     &>.container {
