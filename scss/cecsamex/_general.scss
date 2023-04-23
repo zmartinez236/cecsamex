@@ -855,14 +855,24 @@ form {
 }
 
 .tabContent {
+    position: relative;
 
     .tcItem {
         //border:1px solid blue;
-        display: none;
+        //display: none;
+        opacity: 0;
+        visibility: hidden;
         min-height: 20rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        @include transAnim;
 
         &.active {
-            display: block;
+            //display: block;
+            opacity: 1;
+            visibility: visible;
         }
 
         &.tciPad {
