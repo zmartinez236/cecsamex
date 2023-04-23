@@ -78,18 +78,35 @@ $('#liSeg').hover(function(){
 $('#tabQui').click(function(){
     $(this).addClass('active').siblings().removeClass('active');
     $('#secQui').addClass('active').siblings().removeClass('active');
+
+    var alto = $('#secQui').height();
+
+    $('.tabContent').height(alto);
+
 });
 $('#tabNue').click(function(){
     $(this).addClass('active').siblings().removeClass('active');
     $('#secNue').addClass('active').siblings().removeClass('active');
+
+    var alto1 = $('#secNue').height();
+
+    $('.tabContent').height(alto1);
 });
 $('#tabCro').click(function(){
     $(this).addClass('active').siblings().removeClass('active');
     $('#secCro').addClass('active').siblings().removeClass('active');
+
+    var alto2= $('#secCro').height();
+
+    $('.tabContent').height(alto2);
 });
 $('#tabVid').click(function(){
     $(this).addClass('active').siblings().removeClass('active');
     $('#secVid').addClass('active').siblings().removeClass('active');
+
+    var alto3 = $('#secVid').height();
+
+    $('.tabContent').height(alto3);
 });
 
 //Collapse

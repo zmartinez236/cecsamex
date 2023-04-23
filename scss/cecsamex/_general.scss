@@ -856,13 +856,16 @@ form {
 
 .tabContent {
     position: relative;
+    //min-height: 512px;
 
     .tcItem {
         //border:1px solid blue;
         //display: none;
         opacity: 0;
         visibility: hidden;
-        min-height: 20rem;
+        //min-height: 20rem;
+        height: 0;
+        overflow: hidden;
         position: absolute;
         top: 0;
         left: 0;
@@ -873,6 +876,7 @@ form {
             //display: block;
             opacity: 1;
             visibility: visible;
+            height: auto;
         }
 
         &.tciPad {
