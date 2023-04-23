@@ -868,6 +868,22 @@ form {
         &.tciPad {
             padding: 10rem 0;
         }
+
+        &#secNue{
+
+            .noPadLeft{
+                padding-left: 0;
+            }
+
+            .noPadRight{
+                padding-right: 0;
+            }
+
+        }
+
+        #secCro{
+
+        }
     }
 }
 
@@ -926,9 +942,9 @@ form {
         }
     }
 
-    .flickity-button{
-        display: none;
-    }
+    //.flickity-button{
+     //   display: none;
+    //}
 }
   
 #sliderIndex .carousel-cell {
@@ -939,6 +955,8 @@ form {
     background: $blue2;
     border-radius: 5px;
     counter-increment: gallery-cell;
+    opacity: 0.4;
+    //@include transAnim;
 
     img{
         position: absolute;
@@ -980,7 +998,9 @@ form {
         }
     }
 
-    
+    &.is-selected{
+        opacity: 1;
+    }
 }
   
   /* cell number */
@@ -998,7 +1018,7 @@ form {
 //Cronologia
 #sliderNuestra.carousel {
     background:$blue2;
-    margin-top: 4rem;
+    //margin-top: 4rem;
     height: 25rem;
 
     .flickity-viewport{
@@ -1010,22 +1030,41 @@ form {
         bottom:-6rem;
         z-index: 1;
 
+        &.flickity-prev-next-button{
+            background-color: transparent;
+            border:1px solid white;
+            color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            svg{
+                width: 15px;
+                height: 15px;
+                left:auto;
+                top:auto;
+            }
+        }
 
         &.flickity-prev-next-button.next{
             right: auto;
-            left:10rem;
+            left:7rem;
         }
+
+        
     }
 }
 
   
 #sliderNuestra .carousel-cell {
-    width: 28%;
+    width: 33%;
     height: 25rem;
     margin-right: 10px;
     //background: #8C8;
     opacity: 0.6;
     counter-increment: gallery-cell;
+    //padding: 0 2rem;
+    box-sizing: border-box;
 }
   
 #sliderNuestra .carousel-cell.is-selected {
@@ -1053,10 +1092,11 @@ form {
     bottom:0;
     left:0;
     color:$white;
-    padding: 2rem;
+    padding: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 
     p{
         @include NuniBase;

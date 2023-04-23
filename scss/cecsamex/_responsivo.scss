@@ -207,8 +207,8 @@
                 }
                 
                 li{
-                    flex: 0 0 40%;
-                    max-width: 40%;
+                    flex: 0 0 43%;
+                    max-width: 43%;
                 }
             }
         }
@@ -255,9 +255,16 @@
                             & > .row.rowPad10{
                                 padding: 5rem 0;
 
-                                & > .col-6{
+                                & > .col-1{
+                                    display: none;
+                                }
+
+                                & > .col-6,
+                                & > .col-5{
                                     flex: 0 0 100%;
                                     max-width: 100%;
+                                    padding-left: 15px;
+                                    padding-right: 15px;
 
                                     .contentTextNues{
                                         h3{
@@ -298,6 +305,18 @@
                     }
 
                 }
+
+                &#secCro{
+                    .rowPad10{
+                        padding: 5rem 0;
+
+                        h3{
+                            font-size: 2.4rem;
+                        }
+                    }
+                }
+
+
 
                 //video corporativo
                 &#secVid{
@@ -651,6 +670,10 @@
                 display: inline;
             }
         }
+    }
+
+    #sliderNuestra .carousel-cell {
+        width: 100%;
     }
 
 }

@@ -103,9 +103,18 @@ $('.buttonHideCat').click(function(){
     $('#boxCategorias').toggleClass('open');
 });
 
+
+//Collapse en menu de lado derecho
 $('.cnOffCanvasR .dropdownHeader').click(function(){
     $('.listaMenuLateral').toggleClass('open');
 });
+
+//perro
+//$('#tabCro').click(function () {
+    //$('#sliderNuestra').load('nuestra.html');
+//});
+
+//$('#tabCro').load(location.href + " #secCro");
 
 
 
