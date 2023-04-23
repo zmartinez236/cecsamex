@@ -176,12 +176,49 @@
 
 //Detalle producto
 .detalleProducto {
+    position: relative;
 
     .dpImagen {
         border: 0.1rem solid $red;
 
         img {
             width: 100%;
+        }
+    }
+
+    .dpDots{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom:6rem;
+        //border:1px solid red;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+
+        div{
+            //border:1px solid red;
+            width: 4rem;
+            height: 3rem;
+            display: flex;
+            margin: 0 0.2rem;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            
+            span{
+                background-color: black;
+                height: 2rem;
+                width: 2rem;
+                display: flex;
+                box-sizing: border-box;
+                border-radius: 90%;
+                //margin: 1.5rem;
+                opacity: 0.4;
+                cursor: pointer;
+                font-size: 0;
+                line-height: 0;
+            }
         }
     }
 
@@ -971,6 +1008,8 @@ form {
     counter-increment: gallery-cell;
     opacity: 0.4;
     //@include transAnim;
+    background-position: center;
+    background-size: cover;
 
     img{
         position: absolute;
@@ -1019,7 +1058,7 @@ form {
   
   /* cell number */
 #sliderIndex .carousel-cell:before {
-    display: block;
+    display: none;
     text-align: center;
     content: counter(gallery-cell);
     line-height: 200px;
