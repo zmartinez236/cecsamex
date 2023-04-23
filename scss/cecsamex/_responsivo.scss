@@ -28,8 +28,17 @@
         .cnOffCanvasR{
             right: -100%;
 
+            .cnocBox{
+                width: 80%;
+                right: -80%;
+            }
+
             &.show{
-                right: -20%;
+                right: 0;
+
+                .cnocBox{
+                    right: 0;
+                }
             }
         }
     }
@@ -614,6 +623,15 @@
 
     }
 
-
+    //afterheader br escondido 
+    .afterHeader{
+        & > strong{
+            br{
+                display: inline;
+            }
+        }
+    }
 
 }
+
+

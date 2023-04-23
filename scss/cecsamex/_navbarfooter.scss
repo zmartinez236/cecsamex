@@ -26,7 +26,7 @@ header{
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-right: 3.9rem;
+            margin-right: 2rem;
             cursor: pointer;
 
             a{
@@ -51,6 +51,7 @@ header{
 
                 li{
                     margin: 0 3rem;
+                    margin: 0 1.2rem;
 
                     a,
                     span{
@@ -120,7 +121,7 @@ header{
                             }
 
                             &:last-child{
-                                margin-left: 10rem;
+                                margin-left: 12rem;
 
                                 ul{
                                     li{
@@ -165,6 +166,7 @@ header{
                         right: 0;
                         bottom: 0;
                         z-index: -6;
+                        @include blur;
                     }
 
 
@@ -210,7 +212,7 @@ header{
                 position: absolute;
                 top: 0;
                 right: 3rem;
-                width: 88rem;
+                width: 67rem;
                 padding: 0.6rem 2rem;
                 box-sizing: border-box;
                 visibility: hidden;
@@ -232,12 +234,12 @@ header{
             //Caja con resultados
             .cnsResultados{
                 background-color: $white;
-                padding: 1rem;
+                padding: 1rem 3rem;
                 display: none;
                 position: absolute;
                 top: 4.5rem;
                 right: 3rem;
-                width: 84rem;
+                width: 63rem;
                 margin-right: 2rem;
                 box-sizing: border-box;
 
@@ -347,17 +349,19 @@ header{
         //OffCanvas
         .cnOffCanvasL,
         .cnOffCanvasR{
-            background-color: $blue2;
+            // background-color: $blue2;
             position: fixed;
-            z-index: 1;
+            // z-index: 1;
             top:45px;
             left: 0;
             bottom:0;
-            width: 40rem;
-            padding-top: 5rem;
-            box-sizing: border-box;
-            @include transAnim;
-            @include NuniBase;
+            // width: 40rem;
+            // padding-top: 5rem;
+            // box-sizing: border-box;
+            // @include transAnim;
+            // @include NuniBase;
+
+            
 
             ul{
                 li{
@@ -451,10 +455,27 @@ header{
         }
 
         .cnOffCanvasR{
-            left: auto;
-            right: -40rem;
-            padding-left: 5rem;
-            padding-top: 3rem;
+            left: 100%;
+            right: 0;
+            ///@include transAnim;
+            background-color: #00000080;
+            @include blur;
+
+            .cnocBox{
+                background-color: $blue2;
+                position: absolute;
+                top: 0;
+                left: auto;
+                right: -40rem;
+                bottom: 0;
+                width: 40rem;
+                padding-top: 5rem;
+                box-sizing: border-box;
+                @include transAnim;
+                @include NuniBase;
+                padding-left: 5rem;
+                padding-top: 3rem;
+            }
 
             #menuCanvas{
                 display: none;
@@ -494,7 +515,11 @@ header{
             }
 
             &.show{
-                right: 0;
+                left: 0;
+
+                .cnocBox{
+                    right: 0;
+                }
             }
         }
     }
@@ -546,6 +571,8 @@ header{
                 .listRedes{
                     margin-top: 2rem!important;
                 }
+
+
             }
 
         }
@@ -560,6 +587,17 @@ footer{
     height: 33rem;
     color:$white;
     font-size: 1.4rem;
+
+    .textFooter{
+
+        br{
+            display: none;
+        }
+
+        span{
+            margin: 0 2px;
+        }
+    }
 
     & > .container{
 
@@ -659,6 +697,21 @@ footer{
     footer{
         height: auto;
 
+        .textFooter{
+
+            br{
+                display: inline-block;
+            }
+    
+            span{
+                display:none;
+            }
+
+            p{
+                margin-bottom: 1rem;
+            }
+        }
+
         & >.container{
             & > .row{
 
@@ -750,6 +803,12 @@ footer{
     align-items: center;
     font-size: 1.8rem;
 
+    & > strong{
+        br{
+            display: none;
+        }
+    }
+
     &.ahTitle{
         height: 42rem;
         background-color: $blue2;
@@ -761,8 +820,10 @@ footer{
 
         h2{
             font-size: 5rem;
-            flex:0 0 102rem;
-            max-width: 102rem;
+            //flex:0 0 102rem;
+            //max-width: 102rem;
+            flex:0 0 75rem;
+            max-width: 75rem;
         }
 
         .ahtPleca{

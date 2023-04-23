@@ -28,6 +28,10 @@ $gray5:#F4F4F4;
     transition: all 0.1s ease;
 }
 
+
+@mixin blur{
+    backdrop-filter: blur(4px);
+}
 //--------------Elementos HTML---------------------
 html{
     //font-family: 'Courier New', Courier, monospace;

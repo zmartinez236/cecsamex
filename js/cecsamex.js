@@ -49,7 +49,7 @@ $('.bcTitle').click(function(){
 
 $('.butNewlatter').click(function(){
     $('.boxModal').toggleClass('show');
-    $('body').css('overflow','hidden');
+    $('body').toggleClass('noScroll');
 });
 
 //Cambio de imagenes en el index

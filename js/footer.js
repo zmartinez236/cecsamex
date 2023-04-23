@@ -2,9 +2,9 @@ document.getElementById("footerWeb").innerHTML =
 
     '<div class="container">'+
         '<div class="row">'+
-            '<div class="col-4">'+
-                '<p>Km. 7.5 Carretera Federal Puebla - Atlixco No. 7712,</p>'+
-                '<p>Tlaxcalancingo, San Andrés Cholula. Puebla, México</p>'+
+            '<div class="col-4 textFooter">'+
+                '<p>Km. 7.5 Carretera Federal Puebla<br><span>-</span>Atlixco No. 7712,</p>'+
+                '<p>Tlaxcalancingo, San Andrés Cholula.<br>Puebla, México</p>'+
             '</div>'+
             '<div class="col-4">'+
                 '<p>T. +52 222 284 0414</p>'+
@@ -42,7 +42,7 @@ document.getElementById("footerWeb").innerHTML =
                         '<a href="aviso.html">Aviso de Privacidad</a>'+
                     '</li>'+
                     '<li>'+
-                        '<div class="butNewlatter">Newslatter</div>'+
+                        '<div class="butNewlatter">Newsletter</div>'+
                     '</li>'+
                     '<li>'+
                         '<div>&#169; 2023 CECSAMEX</div>'+

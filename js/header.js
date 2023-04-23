@@ -141,41 +141,43 @@ document.getElementById("headerWeb").innerHTML =
 
         '<!--Menu derecho-->'+
         '<div class="cnOffCanvasR">'+
-            '<ul id="menuCanvas"></ul>'+
-            '<ul>'+
-                '<li>'+
-                    '<div class="butNewlatter">Newsletter</div>'+
-                '</li>'+
-                '<li>'+
-                    '<a href="aviso.html">Aviso de Privacidad</a>'+
-                '</li>'+
-                '<li>'+
-                    '<a href="">Catálogo de Productos</a>'+
-                '</li>'+
-            '</ul>'+
+            '<div class="cnocBox">'+
+                '<ul id="menuCanvas"></ul>'+
+                '<ul>'+
+                    '<li>'+
+                        '<div class="butNewlatter">Newsletter</div>'+
+                    '</li>'+
+                    '<li>'+
+                        '<a href="aviso.html">Aviso de Privacidad</a>'+
+                    '</li>'+
+                    '<li>'+
+                        '<a href="">Catálogo de Productos</a>'+
+                    '</li>'+
+                '</ul>'+
 
-            '<ul class="listInline listRedes">'+
-                '<li>'+
-                    '<a href="#">'+
-                        '<i class="i-facebook"></i>'+
-                    '</a>'+
-                '</li>'+
-                '<li>'+
-                    '<a href="#">'+
-                        '<i class="i-tiktok"></i>'+
-                    '</a>'+
-                '</li>'+
-                '<li>'+
-                    '<a href="#">'+
-                        '<i class="i-youtube"></i>'+
-                    '</a>'+
-                '</li>'+
-                '<li>'+
-                    '<a href="#">'+
-                        '<i class="i-whatsapp"></i>'+
-                    '</a>'+
-                '</li>'+
-            '</ul>'+
+                '<ul class="listInline listRedes">'+
+                    '<li>'+
+                        '<a href="#">'+
+                            '<i class="i-facebook"></i>'+
+                        '</a>'+
+                    '</li>'+
+                    '<li>'+
+                        '<a href="#">'+
+                            '<i class="i-tiktok"></i>'+
+                        '</a>'+
+                    '</li>'+
+                    '<li>'+
+                        '<a href="#">'+
+                            '<i class="i-youtube"></i>'+
+                        '</a>'+
+                    '</li>'+
+                    '<li>'+
+                        '<a href="#">'+
+                            '<i class="i-whatsapp"></i>'+
+                        '</a>'+
+                    '</li>'+
+                '</ul>'+
+            '</div>'+
         '</div>'+
 
     '</div>';

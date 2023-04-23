@@ -537,11 +537,13 @@ p {
     z-index: 10;
     //width: 100vw;
     height: 100vh;
-
+    @include blur;
     @include transAnim2;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    visibility: hidden;
 
     .bmContent {
         background-color: $white;
@@ -642,6 +644,8 @@ p {
 
     &.show {
         top: 0;
+        opacity: 1;
+        visibility: visible;
     }
 }
 
@@ -819,9 +823,10 @@ form {
     height: 4.5rem;
 
     .nbnList {
-        width: 100%;
+        width: 80%;
         //border:1px solid red;
         display: flex;
+        margin: 0 auto;
 
         li {
             flex: 0 0 calc(100% / 4);
@@ -918,6 +923,10 @@ form {
         .dot{
             background-color: $white;
         }
+    }
+
+    .flickity-button{
+        display: none;
     }
 }
   
@@ -1111,6 +1120,22 @@ form {
 
 
 .wrap-contacto.wrapNoPad.bgGray{
+    overflow: hidden;
+}
+.wrap-contacto{
+    & > .container{
+        & > form{
+            div{
+                &:nth-child(10){
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+//No scroll
+.noScroll{
     overflow: hidden;
 }
 
