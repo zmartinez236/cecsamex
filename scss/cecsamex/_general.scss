@@ -141,7 +141,8 @@
 
     .bpImagen {
         border: 0.1rem solid $red;
-        display: block;
+        //display: block;
+        display: flex;
 
         img {
             width: 100%;
@@ -239,6 +240,11 @@
     margin-top: 0;
     margin-bottom: 3rem;
     text-transform: uppercase;
+
+    span{
+        font-size: 1.8rem;
+        vertical-align: super;
+    }
 }
 
 .descProducto {
@@ -1031,8 +1037,8 @@ form {
         bottom: 0;
         //border:1px solid red;
         box-sizing: border-box;
-        padding-bottom: 12rem;
-        padding-left: 12rem;
+        padding-bottom: 5rem;
+        padding-left: 5rem;
         display: flex;
         flex-direction: column;
         justify-content: end;
