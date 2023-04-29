@@ -16,7 +16,11 @@ $gray5:#F4F4F4;
     font-family: 'Montserrat', sans-serif;
 }
 @mixin NuniBase{
-    font-family: 'Nunito Sans', sans-serif;;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+@mixin OswaldBase{
+    font-family: 'Oswald', sans-serif;
 }
 
 @mixin transAnim{

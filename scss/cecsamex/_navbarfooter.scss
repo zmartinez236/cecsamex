@@ -36,7 +36,8 @@ header{
                 height: 4.5rem;
 
                 img{
-                    width: 3.2rem;
+                    //width: 3.2rem;
+                    width: 16rem;
                     height: 2.4rem;
                 }
             }
@@ -547,6 +548,22 @@ header{
 
             .cnLogo{
                 margin-left: 1rem;
+
+                a{
+                    background-image: url('../img/logo_star.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                    img{
+                        width: 3.2rem;
+                        opacity: 0;
+
+                        
+                        
+                    }
+                }
+
             }
 
             .cnMenu{

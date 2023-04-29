@@ -121,12 +121,23 @@
         &.wiBackground{
             & > .container{
                 & > .row{
-                    & > .col-5{
+                    & > .col-7,
+                        .col-4{
                         flex:0 0 100%;
                         max-width: 100%;
                     } 
                     
                     & > div{
+
+                        &:nth-child(1){
+                            order: 2;
+                        }
+
+                        &:nth-child(2){
+                            order: 1;
+                        }
+
+                        /*
                         &:nth-child(1){
                             order: 1;
                         }
@@ -139,10 +150,12 @@
                         &:nth-child(4){
                             order: 2;
                         }
+                        */
                     }
 
                     .biiText{
                         font-size: 1.4rem;
+                        margin: 0;
                     }
 
                     .biiMenu{

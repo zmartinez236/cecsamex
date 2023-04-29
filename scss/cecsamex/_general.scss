@@ -184,6 +184,7 @@
 
     .dpImagen {
         border: 0.1rem solid $red;
+        display: flex;
 
         img {
             width: 100%;
@@ -202,18 +203,18 @@
 
         div{
             //border:1px solid red;
-            width: 4rem;
+            width: 3rem;
             height: 3rem;
             display: flex;
-            margin: 0 0.2rem;
+            margin: 0 0.1rem;
             justify-content: center;
             align-items: center;
             box-sizing: border-box;
             
             span{
                 background-color: black;
-                height: 2rem;
-                width: 2rem;
+                height: 1.2rem;
+                width: 1.2rem;
                 display: flex;
                 box-sizing: border-box;
                 border-radius: 90%;
@@ -767,11 +768,13 @@ form {
 .boxSlider {
     //height: 67rem;
     height: 50rem;
+    padding: 10px 0;
 }
 
 .boxImageIndex {
     position: relative;
-    height: 47rem;
+    //height: 47rem;
+    height: 67rem;
 
     img {
         position: absolute;
@@ -796,7 +799,8 @@ form {
     color: $white;
     @include NuniBase;
     font-size: 2rem;
-    margin: 0;
+    //margin: 0;
+    margin: 6rem 0 3rem;
 }
 
 .biiMenu {
@@ -807,18 +811,23 @@ form {
     justify-content: center;
 
     li {
-        @include NuniBase;
+        //@include NuniBase;
+        @include OswaldBase;
         color: $white;
         @include transAnim2;
         opacity: 0.6;
-        font-size: 6rem;
+        //font-size: 6rem;
+        font-size: 5rem;
         cursor: pointer;
+        font-weight: 300;
 
         &:hover,
         &.active {
-            @include montseBase;
-            font-weight: bold;
+            @include OswaldBase;
+            //font-weight: bold;
+            font-weight: 700;
             opacity: 1;
+            font-size: 6.5rem;
         }
     }
 }
@@ -989,7 +998,8 @@ form {
 
 //----------------Slider--------------------//
 #sliderIndex.carousel {
-    background: $blue2;
+    //background: $blue2;
+    background-color: $white;
     height: 50rem;
 
     .flickity-page-dots{
@@ -1011,14 +1021,17 @@ form {
     width: 66%;
     //height: 200px;
     height: 50rem;
-    //margin-right: 10px;
+    //margin-right: 1rem;
     background: $blue2;
-    border-radius: 5px;
+    //border-radius: 5px;
     counter-increment: gallery-cell;
-    opacity: 0.4;
+    opacity: 0.6;
     //@include transAnim;
     background-position: center;
     background-size: cover;
+    border-width: 0 1rem 0 0;
+    border-style: solid;
+    border-color:$white;
 
     img{
         position: absolute;

@@ -7,7 +7,8 @@ document.getElementById("headerWeb").innerHTML =
 
         '<div class="cnLogo">'+
             '<a href="index.html">'+
-                '<img src="/img/logo_star.png">'+
+                //'<img src="/img/logo_star.png">'+
+                '<img src="/img/cecsamex_logo.svg">'+
             '</a>'+
         '</div>'+
 
