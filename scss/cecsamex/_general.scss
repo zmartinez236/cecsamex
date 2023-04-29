@@ -767,7 +767,8 @@ form {
 
 .boxSlider {
     //height: 67rem;
-    height: 50rem;
+    //height: 50rem;
+    height: 70vh;
     padding: 10px 0;
 }
 
@@ -1000,7 +1001,12 @@ form {
 #sliderIndex.carousel {
     //background: $blue2;
     background-color: $white;
-    height: 50rem;
+    //height: 50rem;
+    height: 70vh;
+
+    .flickity-viewport{
+        height: 70vh!important;
+    }
 
     .flickity-page-dots{
         //border:0.1rem solid red;
@@ -1020,7 +1026,8 @@ form {
 #sliderIndex .carousel-cell {
     width: 66%;
     //height: 200px;
-    height: 50rem;
+    //height: 50rem;
+    height: 70vh;
     //margin-right: 1rem;
     background: $blue2;
     //border-radius: 5px;
@@ -1086,7 +1093,8 @@ form {
     line-height: 200px;
     font-size: 80px;
     color: $white;
-    height: 50rem;
+    //height: 50rem;
+    height: 70vh;
 }
 
 
