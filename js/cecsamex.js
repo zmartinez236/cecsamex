@@ -138,7 +138,8 @@ $('.cnOffCanvasR .dropdownHeader').click(function(){
 
 //$('#tabCro').load(location.href + " #secCro");
 
-
+/*tippy JS*/
+tippy('[data-tippy-content]');
 
 
 

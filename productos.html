@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
     <!--Font iconos cecsamex-->
     <link href="/cecsamex-font/cecsamex-font.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+    <!--Tippy JS-->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
 
 </head>
 
@@ -106,19 +109,19 @@
 
                                 <!--caja de producto-->
                                 <div class="boxProd">
-                                    <a href="detalle_producto.html" class="bpImagen">
-                                        <img src="img/producto_02.jpeg"/>
+                                    <a data-tippy-content="El tooltip que necesitamos en el proyecto" href="detalle_producto.html" class="bpImagen">
+                                        <img  src="img/producto_02.jpeg"/>
                                     </a>
                                     <div class="bpDatos">
                                         <div class="bpNombre">
                                             Lámina Con Puntas Sencilla o Doble Arpón
                                         </div>
                                         <div class="bpIconos">
-                                            <i class="i-agricultura"></i>
-                                            <i class="i-construccion"></i>
-                                            <i class="i-ganaderia"></i>
-                                            <i class="i-ferreteria"></i>
-                                            <i class="i-seguridad"></i>
+                                            <i data-tippy-content="Agricultura" class="i-agricultura"></i>
+                                            <i data-tippy-content="Construcción" class="i-construccion"></i>
+                                            <i data-tippy-content="Ganadería" class="i-ganaderia"></i>
+                                            <i data-tippy-content="Ferretería" class="i-ferreteria"></i>
+                                            <i data-tippy-content="Seguridad" class="i-seguridad"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -128,7 +131,7 @@
                             <div class="col-4">
                                 <!--caja de producto-->
                                 <div class="boxProd">
-                                    <a href="detalle_producto.html" class="bpImagen">
+                                    <a data-tippy-content="El tooltip que necesitamos en el proyecto" href="detalle_producto.html" class="bpImagen">
                                         <img src="img/producto_02.jpeg"/>
                                     </a>
                                     <div class="bpDatos">
@@ -136,11 +139,11 @@
                                             Nombre del producto que esta largo
                                         </div>
                                         <div class="bpIconos">
-                                            <i class="i-agricultura"></i>
-                                            <i class="i-construccion"></i>
-                                            <i class="i-ganaderia"></i>
-                                            <i class="i-ferreteria"></i>
-                                            <i class="i-seguridad"></i>
+                                            <i data-tippy-content="Agricultura" class="i-agricultura"></i>
+                                            <i data-tippy-content="Construcción" class="i-construccion"></i>
+                                            <i data-tippy-content="Ganadería" class="i-ganaderia"></i>
+                                            <i data-tippy-content="Ferretería" class="i-ferreteria"></i>
+                                            <i data-tippy-content="Seguridad" class="i-seguridad"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -149,7 +152,7 @@
                             <div class="col-4">
                                 <!--caja de producto-->
                                 <div class="boxProd">
-                                    <a href="detalle_producto.html" class="bpImagen">
+                                    <a data-tippy-content="El tooltip que necesitamos en el proyecto" href="detalle_producto.html" class="bpImagen">
                                         <img src="img/producto_02.jpeg"/>
                                     </a>
                                     <div class="bpDatos">
@@ -157,11 +160,11 @@
                                             Nombre del producto que esta largo
                                         </div>
                                         <div class="bpIconos">
-                                            <i class="i-agricultura"></i>
-                                            <i class="i-construccion"></i>
-                                            <i class="i-ganaderia"></i>
-                                            <i class="i-ferreteria"></i>
-                                            <i class="i-seguridad"></i>
+                                            <i data-tippy-content="Agricultura" class="i-agricultura"></i>
+                                            <i data-tippy-content="Construcción" class="i-construccion"></i>
+                                            <i data-tippy-content="Ganadería" class="i-ganaderia"></i>
+                                            <i data-tippy-content="Ferretería" class="i-ferreteria"></i>
+                                            <i data-tippy-content="Seguridad" class="i-seguridad"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -171,7 +174,7 @@
                             <div class="col-4">
                                 <!--caja de producto-->
                                 <div class="boxProd">
-                                    <a href="detalle_producto.html" class="bpImagen">
+                                    <a data-tippy-content="El tooltip que necesitamos en el proyecto" href="detalle_producto.html" class="bpImagen">
                                         <img src="img/producto_02.jpeg"/>
                                     </a>
                                     <div class="bpDatos">
@@ -179,11 +182,11 @@
                                             Nombre del producto que esta largo
                                         </div>
                                         <div class="bpIconos">
-                                            <i class="i-agricultura"></i>
-                                            <i class="i-construccion"></i>
-                                            <i class="i-ganaderia"></i>
-                                            <i class="i-ferreteria"></i>
-                                            <i class="i-seguridad"></i>
+                                            <i data-tippy-content="Agricultura" class="i-agricultura"></i>
+                                            <i data-tippy-content="Construcción" class="i-construccion"></i>
+                                            <i data-tippy-content="Ganadería" class="i-ganaderia"></i>
+                                            <i data-tippy-content="Ferretería" class="i-ferreteria"></i>
+                                            <i data-tippy-content="Seguridad" class="i-seguridad"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -219,7 +222,7 @@
     <script src="/js/cecsamex.js" integrity="" crossorigin="anonymous"></script>
 
     <script>
-        $('#menu-productos').addClass('active');
+        $('#menu-productos').addClass('active');      
     </script>    
 
 </body>
