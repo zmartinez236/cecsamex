@@ -833,7 +833,8 @@ form {
     }
 }
 
-.boxDisplayNuestra {
+.boxDisplayNuestra,
+.boxDisplayCustom {
     //background-image: url('../img/img_nuestra_empresa.jpg');
     //height: calc(100vh - 4.5rem);
     height: calc(80vh - 4.5rem);
@@ -939,7 +940,8 @@ form {
             padding: 10rem 0;
         }
 
-        &#secNue{
+        &#secNue,
+        &#secQui{
 
             .noPadLeft{
                 padding-left: 0;
@@ -952,7 +954,8 @@ form {
         }
 
         #secCro{
-
+            background-position: center;
+            background-size: cover;
         }
     }
 }
@@ -989,6 +992,17 @@ form {
         &.ctnTitle {
             font-weight: bold;
             margin-bottom: 0;
+        }
+    }
+
+    ul{
+        list-style: square;
+        padding-left: 1.8rem;
+        font-size: 1.6rem;
+        font-family: "Nunito Sans",sans-serif;
+
+        li{
+            margin-bottom: 1rem;
         }
     }
 }
@@ -1100,7 +1114,8 @@ form {
 
 //Cronologia
 #sliderNuestra.carousel {
-    background:$blue2;
+    //background:$blue2;
+    background:transparent ;
     //margin-top: 4rem;
     height: 25rem;
 
